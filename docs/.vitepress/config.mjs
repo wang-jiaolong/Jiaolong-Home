@@ -6,7 +6,7 @@ import { posts } from './js/posts-auto'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Jiaolong 's Blog",
+  title: "Hi, I 'm Jiaolong",
   description: "Welcome",
   cleanUrls: true,
   lang: 'zh-cn',
