@@ -3,10 +3,10 @@
         <a :href="page.link" class="page" v-for="(page, index) in items">
 
             <div class="date">
-                {{ page.week }} · {{ formatDateTime(page.date) }}
+                {{ formatDateTime(page.date) }}
             </div>
             <div class="title">
-                {{ page.title }}
+                {{ page.week }} ｜ {{ page.title }}
             </div>
         </a>
     </div>
