@@ -6,7 +6,7 @@
                 {{ formatDateTime(page.date) }}
             </div>
             <div class="title">
-                {{ page.week }} ｜ {{ page.title }}
+                {{ page.title }}
             </div>
         </a>
     </div>
@@ -50,7 +50,7 @@ function fix(num, length) {
             padding: px 5px;
             color: var(--vp-c-text-2);
             background: var(--vp-c-bg-soft);
-            width: 65px;
+            width: 60px;
             text-align: center;
             border-radius: 5px;
             @media (max-width: 419px) {
