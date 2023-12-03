@@ -161,11 +161,6 @@
     "@docsearch/css" "3.5.2"
     algoliasearch "^4.19.1"
 
-"@esbuild/darwin-x64@0.18.20":
-  version "0.18.20"
-  resolved "https://registry.npmmirror.com/@esbuild/darwin-x64/-/darwin-x64-0.18.20.tgz"
-  integrity sha512-pc5gxlMDxzm513qPGbCbDukOdsGtKhfxD1zJKXjCCcU7ju50O7MeAZ8c4krSJcOIJGFR+qx21yMMVYwiQvyTyQ==
-
 "@icon-park/vue-next@^1.4.2":
   version "1.4.2"
   resolved "https://registry.npmjs.org/@icon-park/vue-next/-/vue-next-1.4.2.tgz"

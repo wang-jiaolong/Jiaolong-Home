@@ -65,8 +65,6 @@ weeklys.forEach(item => {
 
 export const weekly =  data.sort(compareTime)
 
-console.log(data)
-
 function compareTime(a, b) {
   return new Date(b.date) - new Date(a.date);
 }

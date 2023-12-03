@@ -49,6 +49,12 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
+          "text": "M11W4 | 时隔十年重回北京",
+          "link": "/pages/weekly/2023/M11W4",
+          "date": "2023-11-26T00:00:00.000Z",
+          "week": "M11W4"
+        },
+        {
           "text": "秋招结束",
           "link": "/pages/weekly/2023/M11W1",
           "date": "2023-11-05T00:00:00.000Z",

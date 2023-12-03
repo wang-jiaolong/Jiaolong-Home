@@ -1,7 +1,8 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: doc
-aside: false
+# aside: false
+sidebar: false
 ---
 
 <script setup>
@@ -41,6 +42,7 @@ const { theme, page, frontmatter } = useData()
 
 .yearList {
     padding: 0 40px;
+    margin: 0 auto;
         @media (max-width: 419px) {
             padding: 0 5px;
         }
