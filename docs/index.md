@@ -9,9 +9,9 @@ hero:
   #   src: /logo.png
   #   alt: VitePress
   actions:
-    # - theme: brand
-    #   text: 我的周记
-    #   link: /pages/weekly/2023/01
+    - theme: alt
+      text: 技术博客
+      link: https://www.blog.jiaolong.xyz
     # - theme: brand
     #   text: 项目
     #   link: /project
@@ -19,13 +19,6 @@ hero:
     #   text: Wiki
     #   link: /wiki
 features:
-
-  - title: 技术博客
-    details: 一些学习记录
-    icon: 🧑🏻‍💻
-    linkText: 随便看看
-    link: /blogs
-
   - title: 我的文章
     details: 一些想法思考
     icon: 📃
