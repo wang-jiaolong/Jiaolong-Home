@@ -30,7 +30,13 @@ function traverseFolder(folderPath) {
         // if (data.permalink != null) {
         //   fileLink = "pages" + data.permalink
         // }
-        const fileObject = { text: fileName, link: `${fileLink}`, date:data.date, week:data.week };
+
+        var title = data.title;
+        if (data.week) {
+          title = data.week + "・" + title;
+        }
+
+        const fileObject = { text: title, link: `${fileLink}`, date:data.date, week:data.week };
         const key = `/pages${parentPath}/`.replace(/\\/g, '/')
 
         if (sidebar[key]) {

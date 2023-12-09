@@ -30,8 +30,12 @@ function traverseFolder(directoryPath) {
         }
 
         if (!data.hidden){
+          var title = data.title;
+          if (data.week) {
+            title = data.week + "｜" + title;
+          }
           weeklys.push({
-            title: data.title,
+            title: title,
             date: new Date(data.date).toLocaleDateString(),
             description: data.description,
             link: filePath.replace(/\\/g, '/').slice(4, -3),
