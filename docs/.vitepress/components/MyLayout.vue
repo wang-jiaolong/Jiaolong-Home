@@ -52,7 +52,7 @@ const { page, frontmatter } = useData()
 
 
     .info {
-        padding-top: 10px;
+        margin-top: 15px;
     }
 
 }
