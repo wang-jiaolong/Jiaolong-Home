@@ -13,7 +13,9 @@
                         <div class="text">{{ page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="tip" :text="'🗓️' + new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge type="info" :text="new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge v-if="frontmatter.week" type="info" :text="frontmatter.week" />
+                        <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
                 </div>
                 
@@ -23,12 +25,38 @@
     </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import DefaultTheme from "vitepress/theme";
 import { useData } from 'vitepress'
+import { onMounted } from 'vue';
 
 const { Layout } = DefaultTheme;
 const { page, frontmatter } = useData()
+
+defineProps(["frontmatter"]);
+
+const countWords = () => {
+    const content = document.querySelector(".vp-doc");
+    if (content) {
+        // 去除 HTML 标签后再进行字数统计
+        const textWithoutHtml = content.textContent.replace(/<[^>]*>/g, "");
+        const wordCount = textWithoutHtml.split(/\s+/).filter(word => word.length > 0).length;
+
+        const wordCountContainer = document.getElementById("word-count");
+        if (wordCountContainer) {
+          wordCountContainer.textContent = `字数统计：${wordCount} 字`;
+        } else {
+          console.error("Word count container not found!");
+        }
+      } else {
+        console.error("Content element not found!");
+      }
+};
+// onMounted(() => {
+//     countWords();
+// });
+
+
 
 </script>
 
@@ -52,7 +80,7 @@ const { page, frontmatter } = useData()
 
 
     .info {
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
 }
