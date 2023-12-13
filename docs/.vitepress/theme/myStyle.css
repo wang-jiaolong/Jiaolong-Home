@@ -58,6 +58,10 @@ nav {
       margin:auto;
 }
 
+.vp-doc a {
+   text-decoration: unset;
+}
+
 .VPBadge {
    /* padding: 2px 8px !important; */
    border-radius: 8px !important;
