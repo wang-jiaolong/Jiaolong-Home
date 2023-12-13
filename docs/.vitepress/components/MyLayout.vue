@@ -13,8 +13,8 @@
                         <div class="text">{{ page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="info" :text="new Date(frontmatter.date).toLocaleDateString()" />
-                        <Badge v-if="frontmatter.week" type="info" :text="frontmatter.week" />
+                        <Badge type="tip" :text="new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge v-if="frontmatter.week" type="tip" :text="frontmatter.week" />
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const countWords = () => {
 
 
     .info {
-        margin-top: 5px;
+        margin-top: 8px;
     }
 
 }

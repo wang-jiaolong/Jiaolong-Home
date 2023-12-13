@@ -3,7 +3,7 @@
 layout: home
 hero:
   name: "无限进步"
-  text: "Jiaolong 's Blog"
+  text: "Hi, I 'm Jiaolong"
   tagline: 理想主义的少年永远不会被现实招安
   # image:
   #   src: /logo.png

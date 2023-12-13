@@ -2,12 +2,22 @@
     <div class="list">
         <a :href="page.link" class="page" v-for="(page, index) in items">
 
-            <div class="date">
-                {{ formatDateTime(page.date) }}
+            <div class="leading">
+                <div class="week">
+                    {{ page.week }}
+                </div>
+                <div class="title">
+                    {{ page.title }}
+                </div>
             </div>
-            <div class="title">
-                {{ page.title }}
+
+            <div class="trailing">
+                <div class="date">
+                    {{ formatDateTime(page.date) }}
+                </div>
             </div>
+
+
         </a>
     </div>
 </template>
@@ -38,37 +48,61 @@ function fix(num, length) {
 <style scoped lang="less">
 .list {
     padding: 10px 0;
+
     .page {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         padding: 6px 0;
         transition: all 0.4s;
 
-        .date {
-            font-size: 14px;
-            font-weight: 500;
-            padding: px 5px;
-            color: var(--vp-c-text-2);
-            background: var(--vp-c-bg-soft);
-            width: 60px;
-            text-align: center;
-            border-radius: 5px;
-            @media (max-width: 419px) {
-                font-size: 13px;
+        .leading {
+            display: flex;
+
+            .week {
+                margin-right: 12px;
+                font-size: 14px;
+                font-weight: 500;
+                padding: px 5px;
+                color: var(--vp-c-text-2);
+                background: var(--vp-c-bg-soft);
+                width: 60px;
+                text-align: center;
+                border-radius: 5px;
+
+                @media (max-width: 419px) {
+                    font-size: 13px;
+                    display: none;
+                }
             }
-        }
 
-        .title {
-            margin-left: 12px;
-            text-decoration-color: none;
-            font-size: 16px;
-
-
-            @media (max-width: 419px) {
+            .title {
+                text-decoration-color: none;
                 font-size: 16px;
+
+
+                @media (max-width: 419px) {
+                    font-size: 16px;
+                }
             }
         }
-        
+
+        .trailing {
+            .date {
+                font-size: 14px;
+                font-weight: 500;
+                padding: px 5px;
+                color: var(--vp-c-text-2);
+                // background: var(--vp-c-bg-soft);
+                width: 60px;
+                text-align: center;
+                border-radius: 5px;
+
+                @media (max-width: 419px) {
+                    font-size: 13px;
+                }
+            }
+
+        }
 
 
         &:hover {
@@ -79,9 +113,9 @@ function fix(num, length) {
         }
 
     }
+
     a {
-            color: inherit;
-            text-decoration: none;
-        }
-}
-</style>
+        color: inherit;
+        text-decoration: none;
+    }
+}</style>
