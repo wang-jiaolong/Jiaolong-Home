@@ -25,16 +25,32 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      About me
+      About me    
+      <br>
+    <br>
     </template>
     <template #lead>
+    <VPTeamMembers
+    :members="members"
+  />
     <br>
 会敲代码｜看了点书｜有点想法<br><br>
 不务正业｜啥都想学｜花里胡哨<br><br>
 一切值得｜保持热爱｜无限进步<br><br>
     </template>
   </VPTeamPageTitle>
-  <VPTeamMembers
-    :members="members"
-  />
 </VPTeamPage>
+
+
+<style>
+
+.avatar-img{
+    
+    background: white;
+
+}
+
+.links {
+  display: none !important;
+}
+</style>
