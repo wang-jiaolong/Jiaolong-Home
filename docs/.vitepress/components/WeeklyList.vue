@@ -99,6 +99,7 @@ function fix(num, length) {
 
                 @media (max-width: 419px) {
                     font-size: 13px;
+                    background: var(--vp-c-bg-soft);
                 }
             }
 
