@@ -19,7 +19,7 @@
 
                     <div class="item-info">
                         <div class="title">{{ item.title }}</div>
-                        <div class="date"> {{ item.date }} </div>
+                        <div class="date"> {{ new Date(item.date).toLocaleDateString() }} </div>
                     </div>
 
                 </a>
