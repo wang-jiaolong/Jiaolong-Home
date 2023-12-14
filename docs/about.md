@@ -45,9 +45,7 @@ const members = [
 <style>
 
 .avatar-img{
-    
     background: white;
-
 }
 
 .links {
