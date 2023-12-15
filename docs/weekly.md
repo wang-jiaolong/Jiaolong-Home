@@ -3,6 +3,7 @@
 layout: doc
 aside: false
 sidebar: true
+title: Weekly
 ---
 
 <script setup>
@@ -47,6 +48,5 @@ const { theme, page, frontmatter } = useData()
         @media (max-width: 419px) {
             padding: 0 5px;
         }
-
 }
 </style>
