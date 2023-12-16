@@ -7,7 +7,7 @@ import { posts } from './js/posts-auto'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Jiaolong",
-  description: "Welcome",
+  description: "Helli, nice to meet you!",
   cleanUrls: true,
   lang: 'zh-cn',
   transformPageData(pageData) {
@@ -18,17 +18,18 @@ export default defineConfig({
         name: 'og:title',
         content:
           pageData.frontmatter.layout === 'home'
-            ? `Jiaolong 's Blog`
-            : `${pageData.title} | Jiaolong 's Blog`
+            ? `Jiaolong 's Home`
+            : `${pageData.title} | Jiaolong 's Home`
       }
     ],[
       'meta',
       {
         name: 'og:image',
         content:
-          pageData.frontmatter.image === ''
-            ? 'https://www.jiaolong.xyz/logo.png'
-            : pageData.frontmatter.image
+        'https://www.jiaolong.xyz/logo.png'
+          // pageData.frontmatter.image === ''
+            // ? 'https://www.jiaolong.xyz/logo.png'
+            // : pageData.frontmatter.image
       }])
   },
   banner:'/logo.png',
