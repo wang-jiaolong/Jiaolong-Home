@@ -48,7 +48,13 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
-          "text": "M12W1・第一次录制露脸视频",
+          "text": "M12W2・带着思考问问题",
+          "link": "/pages/weekly/2023/M12W2",
+          "date": "2023-12-17T00:00:00.000Z",
+          "week": "M12W2"
+        },
+        {
+          "text": "M12W1・第一次出镜录视频",
           "link": "/pages/weekly/2023/M12W1",
           "date": "2023-12-09T00:00:00.000Z",
           "week": "M12W1"
