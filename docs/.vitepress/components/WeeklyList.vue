@@ -60,12 +60,12 @@ function fix(num, length) {
 
             .week {
                 margin-right: 12px;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500;
-                padding: px 5px;
-                color: var(--vp-c-text-2);
-                background: var(--vp-c-bg-soft);
-                width: 60px;
+                padding: 0px 0px;
+                color: var(--vp-button-alt-text);
+                background: var(--vp-button-alt-bg);
+                width: 55px;
                 text-align: center;
                 border-radius: 5px;
 
