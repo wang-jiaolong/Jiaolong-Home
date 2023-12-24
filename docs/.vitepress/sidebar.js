@@ -48,7 +48,7 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
-          "text": "M12W3・规范研发流程",
+          "text": "M12W3・恢复更新&健康迭代",
           "link": "/pages/weekly/2023/M12W3",
           "date": "2023-12-22T00:00:00.000Z",
           "week": "M12W3"
