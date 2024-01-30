@@ -169,5 +169,24 @@ export const sidebar = {
         }
       ]
     }
+  ],
+  "/pages/weekly/2024/": [
+    {
+      "text": "2024",
+      "items": [
+        {
+          "text": "M1W4・花过最贵的一笔消费",
+          "link": "/pages/weekly/2024/M1W4",
+          "date": "2024-01-08T00:00:00.000Z",
+          "week": "M1W4"
+        },
+        {
+          "text": "M1W1・新的一年，新的开始",
+          "link": "/pages/weekly/2024/M1W1",
+          "date": "2024-01-08T00:00:00.000Z",
+          "week": "M1W1"
+        }
+      ]
+    }
   ]
 }
