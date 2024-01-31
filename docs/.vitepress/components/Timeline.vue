@@ -3,12 +3,13 @@
 
         <a :href="item.link" v-for="item in items" class="timeline-item">
             <div class="timeline-photo">
-                <img :src="item.img" />
-                <button class="timeline-cta">READ MORE</button>
+                <img v-if="item.img" :src="item.img" />
+                <img v-else :src=" './weekly/' + new Date(item.date).getFullYear() + '/' + item.week + '.jpg'" />
+                <div class="text">{{ item.week }}</div>
             </div>
             <div class="timeline-headline">
-                <p class="timeline-subtitle">{{ new Date(item.date).toLocaleDateString() }}</p>
-                <h2 class="timeline-title">{{ item.title }}</h2>
+                <div class="timeline-title">{{ item.week + " | " + item.title }}</div>
+                <h2 class="timeline-date">{{ new Date(item.date).toLocaleDateString() }}</h2>
                 <!-- <p class="timeline-excerpt">{{ item.abstract }}</p> -->
             </div>
 
@@ -47,7 +48,6 @@ body {
 .timeline {
     width: 100%;
     margin: auto;
-    max-width: 760px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -66,6 +66,10 @@ body {
         opacity: 0.2;
         transition: .3s 0.3s;
         content: "";
+
+        @media (max-width: 419px) {
+            display: none;
+        }
     }
 
     &-overlay {
@@ -109,8 +113,7 @@ body {
         background-color: darken(#3a3a3a, 5%);
     }
 
-    &-title {
-        font-family: 'Jura', serif;
+    &-date {
         margin: 0;
         font-weight: normal;
         font-size: 16px;
@@ -122,11 +125,6 @@ body {
         text-overflow: ellipsis;
         white-space: nowrap;
 
-        @media (max-width: 419px) {
-            font-size: 1em;
-            padding-top: 0px;
-
-        }
     }
 
     &-excerpt {
@@ -157,8 +155,9 @@ body {
 
 
         @media (max-width: 419px) {
-            width: 45%;
+            width: 100%;
             margin: 15px 0;
+            margin-bottom: 100px;
         }
 
         &:hover {
@@ -171,7 +170,7 @@ body {
 
     &-photo {
         width: 100%;
-        // height: 100%;
+        height: 180px;
         overflow: hidden;
         border-radius: 5px;
         position: relative;
@@ -208,17 +207,10 @@ body {
     }
 
 
-    &-subtitle {
-        margin: 0;
-        font-family: 'Jura', sans-serif;
-        font-weight: normal;
-        font-size: 1em;
+    &-title {
+        margin-bottom: 5px;
+        font-size: 16px;
         letter-spacing: 2px;
-        color: var(--vp-c-text-2);
-
-        @media (max-width: 419px) {
-            margin: 0 0 0 0;
-        }
     }
 
     &-back {

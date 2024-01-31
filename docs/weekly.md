@@ -31,18 +31,21 @@ const { theme, page, frontmatter } = useData()
   </VPTeamPageTitle>
 </VPTeamPage>
 
+
 <div class="yearList" v-for="item in theme.weekly">
 
 ## {{ item.title }}({{ item.items.length }})
 
-<WeeklyList :items ="item.items" />
+<Timeline :items="item.items"></Timeline>
+
+
+<!-- <WeeklyList :items ="item.items" /> -->
 
 </div>
 
 <style scoped lang="less">
 
 .yearList {
-  max-width: 750px;
     padding: 0 40px;
     margin: 0 auto;
         @media (max-width: 419px) {

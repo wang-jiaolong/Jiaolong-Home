@@ -177,7 +177,7 @@ export const sidebar = {
         {
           "text": "M1W4・花过最贵的一笔消费",
           "link": "/pages/weekly/2024/M1W4",
-          "date": "2024-01-08T00:00:00.000Z",
+          "date": "2024-01-30T00:00:00.000Z",
           "week": "M1W4"
         },
         {
