@@ -90,10 +90,10 @@ export const sidebar = {
           "week": "M9W2"
         },
         {
-          "text": "M9W2・重构进度：10%",
+          "text": "M9W1・重构进度：10%",
           "link": "/pages/weekly/2023/M9W1",
           "date": "2023-09-11T00:00:00.000Z",
-          "week": "M9W2"
+          "week": "M9W1"
         },
         {
           "text": "M8W4・代码重构之路",
