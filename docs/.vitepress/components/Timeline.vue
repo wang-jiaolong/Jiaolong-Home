@@ -211,6 +211,10 @@ body {
         margin-bottom: 5px;
         font-size: 16px;
         letter-spacing: 2px;
+
+        @media (max-width: 419px) {
+            margin-top: 10px;
+        }
     }
 
     &-back {
