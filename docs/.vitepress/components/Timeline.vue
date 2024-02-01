@@ -83,7 +83,7 @@ body {
     }
 
     &-headline {
-        color: #fff;
+        color: unset;
         position: absolute;
         display: flex;
         letter-spacing: .4px;
