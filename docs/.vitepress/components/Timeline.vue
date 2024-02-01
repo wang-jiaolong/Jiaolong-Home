@@ -83,7 +83,7 @@ body {
     }
 
     &-headline {
-        color: unset;
+        color: var(--vp-c-text-1);
         position: absolute;
         display: flex;
         letter-spacing: .4px;
