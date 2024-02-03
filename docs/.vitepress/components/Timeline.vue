@@ -7,8 +7,8 @@
                 <img v-else :src=" './weekly/' + new Date(item.date).getFullYear() + '/' + item.week + '.jpg'" />
                 <div class="text">{{ item.week }}</div>
             </div>
-            <div class="timeline-headline">
-                <div class="timeline-title">{{ item.week + " | " + item.title }}</div>
+            <div class="timeline-headline"> 
+                <div class="timeline-title">{{ item.week + "・" + item.title }}</div>
                 <h2 class="timeline-date">{{ new Date(item.date).toLocaleDateString() }}</h2>
                 <!-- <p class="timeline-excerpt">{{ item.abstract }}</p> -->
             </div>

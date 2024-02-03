@@ -17,6 +17,7 @@
                         <Badge v-if="frontmatter.week" type="tip" :text="frontmatter.week" />
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
+                    <img :src=" '../../../../weekly/' + new Date(frontmatter.date).getFullYear() + '/' + frontmatter.week + '.jpg'" />
                 </div>
                 
             </template>
@@ -52,11 +53,6 @@ const countWords = () => {
         console.error("Content element not found!");
       }
 };
-// onMounted(() => {
-//     countWords();
-// });
-
-
 
 </script>
 
@@ -80,7 +76,12 @@ const countWords = () => {
 
 
     .info {
-        margin-top: 8px;
+        margin-top: 10px;
+    }
+
+    img {
+        margin-top: 10px;
+        border-radius: 17px;
     }
 
 }

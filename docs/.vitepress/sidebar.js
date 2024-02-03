@@ -49,13 +49,13 @@ export const sidebar = {
       "items": [
         {
           "text": "M12W3・恢复更新&健康迭代",
-          "link": "/pages/weekly/2023/M12W3",
+          "link": "/pages/weekly/2023/m12w3",
           "date": "2023-12-22T00:00:00.000Z",
           "week": "M12W3"
         },
         {
           "text": "M12W2・带着思考问问题",
-          "link": "/pages/weekly/2023/M12W2",
+          "link": "/pages/weekly/2023/m12w2",
           "date": "2023-12-17T00:00:00.000Z",
           "week": "M12W2"
         },
@@ -67,31 +67,31 @@ export const sidebar = {
         },
         {
           "text": "M11W4・时隔十年重回北京",
-          "link": "/pages/weekly/2023/M11W4",
+          "link": "/pages/weekly/2023/m11w4",
           "date": "2023-11-26T00:00:00.000Z",
           "week": "M11W4"
         },
         {
           "text": "M11W1・秋招结束",
-          "link": "/pages/weekly/2023/M11W1",
+          "link": "/pages/weekly/2023/m11w1",
           "date": "2023-11-05T00:00:00.000Z",
           "week": "M11W1"
         },
         {
           "text": "M9W3・拖更很久的新版本上线",
-          "link": "/pages/weekly/2023/M9W3",
+          "link": "/pages/weekly/2023/m9w3",
           "date": "2023-09-21T00:00:00.000Z",
           "week": "M9W3"
         },
         {
           "text": "M9W2・重新设计颜色资源模块",
-          "link": "/pages/weekly/2023/M9W2",
+          "link": "/pages/weekly/2023/m9w2",
           "date": "2023-09-15T00:00:00.000Z",
           "week": "M9W2"
         },
         {
           "text": "M9W1・重构进度：10%",
-          "link": "/pages/weekly/2023/M9W1",
+          "link": "/pages/weekly/2023/m9w1",
           "date": "2023-09-11T00:00:00.000Z",
           "week": "M9W1"
         },
@@ -175,14 +175,20 @@ export const sidebar = {
       "text": "2024",
       "items": [
         {
-          "text": "M1W4・花过最贵的一笔消费",
-          "link": "/pages/weekly/2024/M1W4",
+          "text": "M2W1・体验下习惯类app",
+          "link": "/pages/weekly/2024/m2w1",
+          "date": "2024-02-03T00:00:00.000Z",
+          "week": "M2W1"
+        },
+        {
+          "text": "M1W4・买过最贵的一个产品",
+          "link": "/pages/weekly/2024/m1w4",
           "date": "2024-01-30T00:00:00.000Z",
           "week": "M1W4"
         },
         {
           "text": "M1W1・新的一年，新的开始",
-          "link": "/pages/weekly/2024/M1W1",
+          "link": "/pages/weekly/2024/m1w1",
           "date": "2024-01-08T00:00:00.000Z",
           "week": "M1W1"
         }
