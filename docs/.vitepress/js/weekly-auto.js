@@ -28,7 +28,7 @@ function traverseFolder(directoryPath) {
           date: new Date(data.date).toLocaleDateString(),
           link: filePath.replace(/\\/g, '/').slice(4, -3),
           img: data.img,
-          week: data.week
+          week: path.basename(filePath, '.md').toUpperCase()
         })
       }
     });

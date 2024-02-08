@@ -4,12 +4,14 @@ export const sidebar = {
       "text": "0.TEMPLATE",
       "items": [
         {
-          "link": "/pages/0.template/api-examples"
+          "link": "/pages/0.template/api-examples",
+          "week": "API-EXAMPLES"
         },
         {
           "text": null,
           "link": "/pages/0.template/000.blog",
-          "date": "2023-06-21T00:00:00.000Z"
+          "date": "2023-06-21T00:00:00.000Z",
+          "week": "000.BLOG"
         }
       ]
     }
@@ -21,7 +23,8 @@ export const sidebar = {
         {
           "text": "事线app-讲讲背后的故事",
           "link": "/pages/posts/eventline",
-          "date": "2023-02-22T00:00:00.000Z"
+          "date": "2023-02-22T00:00:00.000Z",
+          "week": "EVENTLINE"
         }
       ]
     }
@@ -33,12 +36,14 @@ export const sidebar = {
         {
           "text": "事线app-讲讲背后的故事",
           "link": "/pages/project/eventline",
-          "date": "2023-02-22T00:00:00.000Z"
+          "date": "2023-02-22T00:00:00.000Z",
+          "week": "EVENTLINE"
         },
         {
           "text": "物品指南-从idea到上线",
           "link": "/pages/project/mythings",
-          "date": "2021-12-24T00:00:00.000Z"
+          "date": "2021-12-24T00:00:00.000Z",
+          "week": "MYTHINGS"
         }
       ]
     }
@@ -48,122 +53,122 @@ export const sidebar = {
       "text": "2023",
       "items": [
         {
-          "text": "m12w3・恢复更新&健康迭代",
+          "text": "恢复更新&健康迭代",
           "link": "/pages/weekly/2023/m12w3",
           "date": "2023-12-22T00:00:00.000Z",
-          "week": "m12w3"
+          "week": "M12W3"
         },
         {
-          "text": "m12w2・带着思考问问题",
+          "text": "带着思考问问题",
           "link": "/pages/weekly/2023/m12w2",
           "date": "2023-12-17T00:00:00.000Z",
-          "week": "m12w2"
+          "week": "M12W2"
         },
         {
-          "text": "m12w1・第一次出镜录视频",
+          "text": "第一次出镜录视频",
           "link": "/pages/weekly/2023/M12W1",
           "date": "2023-12-09T00:00:00.000Z",
-          "week": "m12w1"
+          "week": "M12W1"
         },
         {
-          "text": "m11w4・时隔十年重回北京",
+          "text": "时隔十年重回北京",
           "link": "/pages/weekly/2023/m11w4",
           "date": "2023-11-26T00:00:00.000Z",
-          "week": "m11w4"
+          "week": "M11W4"
         },
         {
-          "text": "m11w1・秋招结束",
+          "text": "秋招结束",
           "link": "/pages/weekly/2023/m11w1",
           "date": "2023-11-05T00:00:00.000Z",
-          "week": "m11w1"
+          "week": "M11W1"
         },
         {
-          "text": "m9w3・拖更很久的新版本上线",
+          "text": "拖更很久的新版本上线",
           "link": "/pages/weekly/2023/m9w3",
           "date": "2023-09-21T00:00:00.000Z",
-          "week": "m9w3"
+          "week": "M9W3"
         },
         {
-          "text": "m9w2・重新设计颜色资源模块",
+          "text": "重新设计颜色资源模块",
           "link": "/pages/weekly/2023/m9w2",
           "date": "2023-09-15T00:00:00.000Z",
-          "week": "m9w2"
+          "week": "M9W2"
         },
         {
-          "text": "m9w1・重构进度：10%",
+          "text": "重构进度：10%",
           "link": "/pages/weekly/2023/m9w1",
           "date": "2023-09-11T00:00:00.000Z",
-          "week": "m9w1"
+          "week": "M9W1"
         },
         {
-          "text": "M8W4・代码重构之路",
-          "link": "/pages/weekly/2023/12",
+          "text": "代码重构之路",
+          "link": "/pages/weekly/2023/m8w4",
           "date": "2023-08-27T00:00:00.000Z",
           "week": "M8W4"
         },
         {
-          "text": "M8W2・目的地：上海",
-          "link": "/pages/weekly/2023/11",
+          "text": "目的地：上海",
+          "link": "/pages/weekly/2023/m8w2",
           "date": "2023-08-13T00:00:00.000Z",
           "week": "M8W2"
         },
         {
-          "text": "M7W4・终于有实习了，面试复盘",
-          "link": "/pages/weekly/2023/10",
+          "text": "终于有实习了，面试复盘",
+          "link": "/pages/weekly/2023/m7w4",
           "date": "2023-07-31T00:00:00.000Z",
           "week": "M7W4"
         },
         {
-          "text": "M7W1・一些实习面经",
-          "link": "/pages/weekly/2023/09",
+          "text": "一些实习面经",
+          "link": "/pages/weekly/2023/m7w1",
           "date": "2023-07-3",
           "week": "M7W1"
         },
         {
-          "text": "M6W4・基础不牢 地动山摇",
-          "link": "/pages/weekly/2023/08",
+          "text": "基础不牢 地动山摇",
+          "link": "/pages/weekly/2023/m6w4",
           "date": "2023-06-27T00:00:00.000Z",
           "week": "M6W4"
         },
         {
-          "text": "M6W3・初探效率生活",
-          "link": "/pages/weekly/2023/07",
+          "text": "初探效率生活",
+          "link": "/pages/weekly/2023/m6w3",
           "date": "2023-06-20T00:00:00.000Z",
           "week": "M6W3"
         },
         {
-          "text": "M6W2・迈出Web端的第一步",
-          "link": "/pages/weekly/2023/06",
+          "text": "迈出Web端的第一步",
+          "link": "/pages/weekly/2023/m6w2",
           "date": "2023-06-12T00:00:00.000Z",
           "week": "M6W2"
         },
         {
-          "text": "M6W1・对AI有了新思考",
-          "link": "/pages/weekly/2023/05",
+          "text": "对AI有了新思考",
+          "link": "/pages/weekly/2023/m6w1",
           "date": "2023-06-05T00:00:00.000Z",
           "week": "M6W1"
         },
         {
-          "text": "M5W4・想法远大于技术",
-          "link": "/pages/weekly/2023/04",
+          "text": "想法远大于技术",
+          "link": "/pages/weekly/2023/m5w4",
           "date": "2023-05-30T00:00:00.000Z",
           "week": "M5W4"
         },
         {
-          "text": "M5W3・可编辑的数据才有价值",
-          "link": "/pages/weekly/2023/03",
+          "text": "可编辑的数据才有价值",
+          "link": "/pages/weekly/2023/m5w3",
           "date": "2023-05-25T00:00:00.000Z",
           "week": "M5W3"
         },
         {
-          "text": "M5W2・克服不了的完美主义",
-          "link": "/pages/weekly/2023/02",
+          "text": "克服不了的完美主义",
+          "link": "/pages/weekly/2023/m5w2",
           "date": "2023-05-15T00:00:00.000Z",
           "week": "M5W2"
         },
         {
-          "text": "M5W1・就这样，从这周开始写周记",
-          "link": "/pages/weekly/2023/01",
+          "text": "就这样，从这周开始写周记",
+          "link": "/pages/weekly/2023/m5w1",
           "date": "2023-05-07T00:00:00.000Z",
           "week": "M5W1"
         }
@@ -175,22 +180,28 @@ export const sidebar = {
       "text": "2024",
       "items": [
         {
-          "text": "m2w1・体验下习惯类app",
+          "text": "终于过年啦！有事年后再说",
+          "link": "/pages/weekly/2024/m2w2",
+          "date": "2024-02-09T00:00:00.000Z",
+          "week": "M2W2"
+        },
+        {
+          "text": "体验下习惯类app",
           "link": "/pages/weekly/2024/m2w1",
           "date": "2024-02-03T00:00:00.000Z",
-          "week": "m2w1"
+          "week": "M2W1"
         },
         {
-          "text": "m1w4・买过最贵的一个产品",
+          "text": "买过最贵的一个产品",
           "link": "/pages/weekly/2024/m1w4",
           "date": "2024-01-30T00:00:00.000Z",
-          "week": "m1w4"
+          "week": "M1W4"
         },
         {
-          "text": "m1w1・新的一年，新的开始",
+          "text": "新的一年，新的开始",
           "link": "/pages/weekly/2024/m1w1",
           "date": "2024-01-08T00:00:00.000Z",
-          "week": "m1w1"
+          "week": "M1W1"
         }
       ]
     }

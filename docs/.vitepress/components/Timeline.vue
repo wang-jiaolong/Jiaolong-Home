@@ -4,7 +4,7 @@
         <a :href="item.link" v-for="item in items" class="timeline-item">
             <div class="timeline-photo">
                 <img v-if="item.img" :src="item.img" />
-                <img v-else :src=" './weekly/' + new Date(item.date).getFullYear() + '/' + item.week + '.jpg'" />
+                <img v-else :src=" './weekly/' + new Date(item.date).getFullYear() + '/' + item.week.toLowerCase() + '.jpg'" />
                 <div class="text">{{ item.week }}</div>
             </div>
             <div class="timeline-headline"> 
@@ -172,7 +172,7 @@ body {
         width: 100%;
         height: 180px;
         overflow: hidden;
-        border-radius: 5px;
+        border-radius: 2px;
         position: relative;
         box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
     }

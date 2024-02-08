@@ -17,7 +17,7 @@
                         <Badge v-if="frontmatter.week" type="tip" :text="frontmatter.week" />
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
-                    <img :src=" '../../../../weekly/' + new Date(frontmatter.date).getFullYear() + '/' + frontmatter.week + '.jpg'" />
+                    <img :src=" '../../../../weekly/' + new Date(frontmatter.date).getFullYear() + '/' + getFileNameWithoutExtension(page.filePath) + '.jpg'" />
                 </div>
                 
             </template>
@@ -30,33 +30,34 @@
 import DefaultTheme from "vitepress/theme";
 import { useData } from 'vitepress'
 import { onMounted } from 'vue';
+import path from 'path'
 
 const { Layout } = DefaultTheme;
 const { page, frontmatter } = useData()
 
 defineProps(["frontmatter"]);
 
-const countWords = () => {
-    const content = document.querySelector(".vp-doc");
-    if (content) {
-        // 去除 HTML 标签后再进行字数统计
-        const textWithoutHtml = content.textContent.replace(/<[^>]*>/g, "");
-        const wordCount = textWithoutHtml.split(/\s+/).filter(word => word.length > 0).length;
 
-        const wordCountContainer = document.getElementById("word-count");
-        if (wordCountContainer) {
-          wordCountContainer.textContent = `字数统计：${wordCount} 字`;
-        } else {
-          console.error("Word count container not found!");
-        }
-      } else {
-        console.error("Content element not found!");
-      }
-};
 
 </script>
 
 
+<script>
+export default {
+  methods: {
+    getFileNameWithoutExtension(filePath) {
+      // 使用 split() 方法根据斜杠或反斜杠分割路径，选择数组中的最后一个元素作为文件名
+      let fileNameWithExtension = filePath.split('/').pop();
+
+      // 使用 split() 方法根据点号分割文件名，选择数组中的第一个元素作为没有后缀的文件名
+      let fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
+
+      // 返回文件名（不包含后缀）
+      return fileNameWithoutExtension;
+    }
+  }
+};
+</script>
 
 <style scoped lang="less">
 .weekly-title {
@@ -81,7 +82,7 @@ const countWords = () => {
 
     img {
         margin-top: 10px;
-        border-radius: 17px;
+        border-radius: 10px;
     }
 
 }

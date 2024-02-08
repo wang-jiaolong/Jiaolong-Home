@@ -36,7 +36,7 @@ function traverseFolder(folderPath) {
           title = data.week + "・" + title;
         }
 
-        const fileObject = { text: title, link: `${fileLink}`, date:data.date, week:data.week };
+        const fileObject = { text: title, link: `${fileLink}`, date:data.date, week:pathName.toUpperCase() };
         const key = `/pages${parentPath}/`.replace(/\\/g, '/')
 
         if (sidebar[key]) {

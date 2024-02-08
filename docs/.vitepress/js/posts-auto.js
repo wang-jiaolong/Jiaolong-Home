@@ -31,9 +31,7 @@ function traverseFolder(directoryPath) {
 
         if (!data.hidden){
           var title = data.title;
-          if (data.week) {
-            title = data.week + "｜" + title;
-          }
+          title = path.basename(filePath, '.md').toUpperCase() + "｜" + title;
           weeklys.push({
             title: title,
             date: new Date(data.date).toLocaleDateString(),
