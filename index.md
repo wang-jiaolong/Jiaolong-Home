@@ -12,7 +12,7 @@ const { theme, page, frontmatter } = useData()
 
 import Portfolio from './portfolio/Portfolio.vue'
 
-const imagePath = './images/'
+const imagePath = '/images/'
 
 const config = {
   active:"about",
