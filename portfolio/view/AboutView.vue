@@ -10,7 +10,7 @@
         </header>
 
         <section class="about-text">
-            <p>{{ config.content.about }} </p>
+            {{ config.content.about }}
         </section>
 
 
