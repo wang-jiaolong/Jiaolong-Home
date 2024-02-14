@@ -1,0 +1,551 @@
+<template>
+
+  <div class="portfolio">
+  
+      <main>
+  
+  <!--
+    - #SIDEBAR
+  -->
+  
+  <aside class="sidebar" data-sidebar>
+  
+    <div class="sidebar-info">
+  
+      <figure class="avatar-box">
+        <img :src="config.sidebar.avatar" :alt="config.sidebar.name" width="80">
+      </figure>
+  
+      <div class="info-content">
+        <h1 class="name" title="Richard hanrick">{{ config.sidebar.name }}</h1>
+  
+        <p class="title">{{  config.sidebar.content }}</p>
+      </div>
+  
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+  
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+  
+    </div>
+  
+    <div class="sidebar-info_more">
+  
+      <div class="separator"></div>
+  
+      <ul class="contacts-list">
+  
+        <li class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+  
+            <a :href="config.sidebar.content" class="contact-link">{{ config.sidebar.email }}</a>
+          </div>
+  
+        </li>
+  
+        <li v-if="config.sidebar.phone" class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+  
+            <a class="contact-link">{{ config.sidebar.phone }}</a>
+          </div>
+  
+        </li>
+  
+        <li v-if="config.sidebar.birthday" class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Birthday</p>
+  
+            <time :datetime="config.sidebar.birthday">{{ config.sidebar.birthday }}</time>
+          </div>
+  
+        </li>
+  
+        <li v-if="config.sidebar.location" class="contact-item">
+  
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+  
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+  
+            <address>{{ config.sidebar.location }}</address>
+          </div>
+  
+        </li>
+  
+      </ul>
+  
+      <div class="separator"></div>
+  
+      <ul class="social-list">
+  
+        <li v-for="item in config.sidebar.socials" class="social-item">
+          <a target="_blank" :href="item.url" class="social-link">
+								<img class="mediaIcon" :title="item.title" :src="item.icon" />
+					</a>
+        </li>
+  
+  
+      </ul>
+  
+    </div>
+  
+  </aside>
+  
+  
+  
+  
+  
+  <!--
+    - #main-content
+  -->
+  
+  <div class="main-content">
+  
+    <!--
+      - #NAVBAR
+    -->
+  
+    <nav class="navbar">
+  
+      <ul class="navbar-list">
+  
+        <li class="navbar-item">
+          <a href="./index" :class="config.active == 'about' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>About</a>
+        </li>
+  
+        <li class="navbar-item">
+          <a href="./weekly" :class="config.active == 'weekly' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Weekly</a>
+        </li>
+  
+        <!-- <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Portfolio</button>
+        </li>
+  
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Blog</button>
+        </li>
+  
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Contact</button>
+        </li> -->
+  
+      </ul>
+  
+    </nav>
+  
+  
+ 
+  
+    <!--
+      - #RESUME
+    -->
+  
+    <article class="resume" data-page="resume">
+  
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+  
+      <section class="timeline">
+  
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+  
+          <h3 class="h3">Education</h3>
+        </div>
+  
+        <ol class="timeline-list">
+  
+          <li class="timeline-item">
+  
+            <h4 class="h4 timeline-item-title">University school of the arts</h4>
+  
+            <span>2007 — 2008</span>
+  
+            <p class="timeline-text">
+              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+              quas molestias
+              exceptur.
+            </p>
+  
+          </li>
+  
+          <li class="timeline-item">
+  
+            <h4 class="h4 timeline-item-title">New york academy of art</h4>
+  
+            <span>2006 — 2007</span>
+  
+            <p class="timeline-text">
+              Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+              omnis..
+            </p>
+  
+          </li>
+  
+          <li class="timeline-item">
+  
+            <h4 class="h4 timeline-item-title">High school of art and design</h4>
+  
+            <span>2002 — 2004</span>
+  
+            <p class="timeline-text">
+              Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+              magni dolores
+              eos.
+            </p>
+  
+          </li>
+  
+        </ol>
+  
+      </section>
+  
+      <section class="timeline">
+  
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+  
+          <h3 class="h3">Experience</h3>
+        </div>
+  
+        <ol class="timeline-list">
+  
+          <li class="timeline-item">
+  
+            <h4 class="h4 timeline-item-title">Creative director</h4>
+  
+            <span>2015 — Present</span>
+  
+            <p class="timeline-text">
+              Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+              molestias
+              exceptur.
+            </p>
+  
+          </li>
+  
+          <li class="timeline-item">
+  
+            <h4 class="h4 timeline-item-title">Art director</h4>
+  
+            <span>2013 — 2015</span>
+  
+            <p class="timeline-text">
+              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+              quas molestias
+              exceptur.
+            </p>
+  
+          </li>
+  
+          <li class="timeline-item">
+  
+            <h4 class="h4 timeline-item-title">Web designer</h4>
+  
+            <span>2010 — 2013</span>
+  
+            <p class="timeline-text">
+              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+              quas molestias
+              exceptur.
+            </p>
+  
+          </li>
+  
+        </ol>
+  
+      </section>
+  
+
+  
+    </article>
+  
+    <About :config="config"></About>
+
+    <Weekly :config="config"></Weekly>
+    <!--
+      - #BLOG
+    -->
+  
+    <article class="blog" data-page="blog">
+  
+      <header>
+        <h2 class="h2 article-title">Blog</h2>
+      </header>
+  
+      <section class="blog-posts">
+  
+        <ul class="blog-posts-list">
+  
+          <li class="blog-post-item">
+            <a href="#">
+  
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure>
+  
+              <div class="blog-content">
+  
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+  
+                  <span class="dot"></span>
+  
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+  
+                <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+  
+                <p class="blog-text">
+                  Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                </p>
+  
+              </div>
+  
+            </a>
+          </li>
+  
+          <li class="blog-post-item">
+            <a href="#">
+  
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+              </figure>
+  
+              <div class="blog-content">
+  
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+  
+                  <span class="dot"></span>
+  
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+  
+                <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+  
+                <p class="blog-text">
+                  Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                </p>
+  
+              </div>
+  
+            </a>
+          </li>
+  
+          <li class="blog-post-item">
+            <a href="#">
+  
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+              </figure>
+  
+              <div class="blog-content">
+  
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+  
+                  <span class="dot"></span>
+  
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+  
+                <h3 class="h3 blog-item-title">Design digest #80</h3>
+  
+                <p class="blog-text">
+                  Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                </p>
+  
+              </div>
+  
+            </a>
+          </li>
+  
+          <li class="blog-post-item">
+            <a href="#">
+  
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+              </figure>
+  
+              <div class="blog-content">
+  
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+  
+                  <span class="dot"></span>
+  
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+  
+                <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+  
+                <p class="blog-text">
+                  Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                </p>
+  
+              </div>
+  
+            </a>
+          </li>
+  
+          <li class="blog-post-item">
+            <a href="#">
+  
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+              </figure>
+  
+              <div class="blog-content">
+  
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+  
+                  <span class="dot"></span>
+  
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+  
+                <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+  
+                <p class="blog-text">
+                  Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+  
+              </div>
+  
+            </a>
+          </li>
+  
+          <li class="blog-post-item">
+            <a href="#">
+  
+              <figure class="blog-banner-box">
+                <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+              </figure>
+  
+              <div class="blog-content">
+  
+                <div class="blog-meta">
+                  <p class="blog-category">Design</p>
+  
+                  <span class="dot"></span>
+  
+                  <time datetime="2022-02-23">Fab 23, 2022</time>
+                </div>
+  
+                <h3 class="h3 blog-item-title">Design digest #79</h3>
+  
+                <p class="blog-text">
+                  Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                </p>
+  
+              </div>
+  
+            </a>
+          </li>
+  
+        </ul>
+  
+      </section>
+  
+    </article>
+  
+  
+  
+  
+  
+    <!--
+      - #CONTACT
+    -->
+  
+    <article class="contact" data-page="contact">
+  
+      <header>
+        <h2 class="h2 article-title">Contact</h2>
+      </header>
+  
+      <section class="mapbox" data-mapbox>
+        <figure>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+            width="400" height="300" loading="lazy"></iframe>
+        </figure>
+      </section>
+  
+      <section class="contact-form">
+  
+        <h3 class="h3 form-title">Contact Form</h3>
+  
+        <form action="#" class="form" data-form>
+  
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+  
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </div>
+  
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+  
+          <button class="form-btn" type="submit" disabled data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+  
+        </form>
+  
+      </section>
+  
+    </article>
+  
+  </div>
+  
+  </main>
+  </div>
+  
+  
+  </template>
+  
+  <style>
+  /* 导入并使用外部的 CSS 文件 */
+  @import './assets/css/style.css';
+</style>
+
+<script setup>
+
+import Weekly from "./tab/WeeklyView.vue"
+import About from "./tab/AboutView.vue"
+
+// import * as ioniconsESM from './assets/js/ioniicons.js';
+
+const props = defineProps({
+  config: Object
+})
+
+</script>
+
