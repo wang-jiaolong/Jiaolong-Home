@@ -1,0 +1,17 @@
+/**
+ * Custom
+ * -------------------------------------------------------------------------- */
+
+.page-post {
+    .VPSidebar {
+        display: none !important;
+    }
+ 
+    .VPNavBarTitle.has-sidebar .title{
+       border-bottom: unset;
+    }
+
+    .VPBadge {
+        padding: 2px 10px;
+    }
+ }
