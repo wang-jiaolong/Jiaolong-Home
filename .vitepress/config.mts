@@ -1,10 +1,37 @@
 import { defineConfig } from 'vitepress'
+import { weekly } from './theme/weekly-auto'
+
 const imagePath = '/images/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Jiaolong",
+  description: "Helli, nice to meet you!",
+  cleanUrls: true,
+  lang: 'zh-cn',
+  sidebar: false,
+  transformPageData(pageData) {
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'meta',
+      {
+        name: 'og:title',
+        content:
+          pageData.frontmatter.layout === 'home'
+            ? `Jiaolong 's Home`
+            : `${pageData.title} | Jiaolong 's Home`
+      }
+    ],[
+      'meta',
+      {
+        name: 'og:image',
+        content:
+        'https://www.jiaolong.xyz/logo.png'
+          // pageData.frontmatter.image === ''
+            // ? 'https://www.jiaolong.xyz/logo.png'
+            // : pageData.frontmatter.image
+      }])
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -12,20 +39,20 @@ export default defineConfig({
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   }
+    // ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
-
+    weekly: weekly,
     info: {
       avatar: imagePath + "avatar.png",
       name: "Jiaolong",

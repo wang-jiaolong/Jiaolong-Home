@@ -11,24 +11,13 @@
 
             <ul class="filter-list">
 
-                <li class="filter-item">
-                    <button class="active" data-filter-btn>All</button>
-                </li>
-
-                <li class="filter-item">
-                    <button data-filter-btn>Web design</button>
-                </li>
-
-                <li class="filter-item">
-                    <button data-filter-btn>Applications</button>
-                </li>
-
-                <li class="filter-item">
-                    <button data-filter-btn>Web development</button>
+                <li v-for=" (year, index) in theme.weekly" class="filter-item">
+                    <button @click="changeIndex(index)" :class="{active: currentYear === index}" data-filter-btn>{{ year.title + "(" + year.items.length + ")" }}</button>
                 </li>
 
             </ul>
 
+        
             <div class="filter-select-box">
 
                 <button class="filter-select" data-select>
@@ -65,24 +54,24 @@
 
             <ul class="project-list">
 
-                <li v-for="item in 5" class="project-item  active" data-filter-item data-category="web development">
-                    <a href="#">
+                <li v-for="item in  theme.weekly[currentYear].items" class="project-item  active" data-filter-item data-category="web development">
+                    <a :href="item.link">
 
                         <figure class="project-img">
                             <div class="project-item-icon-box">
-                                <ion-icon name="eye-outline"></ion-icon>
+                                <!-- <ion-icon name="eye-outline"></ion-icon> -->
+                                {{ item.week.toUpperCase() }}
                             </div>
-
-                            <img src="/images/project-1.jpg" alt="finance" loading="lazy">
+                            <img :src="'/weekly/' + new Date(item.date).getFullYear() + '/' + item.week.toLowerCase() + '.jpg' " loading="lazy" />
                         </figure>
 
-                        <h3 class="project-title">Finance</h3>
+                        
+                        <h3 class="project-title">{{ item.title }}</h3>
 
-                        <p class="project-category">Web development</p>
+                        <p class="project-category">{{ new Date(item.date).toLocaleDateString() }}</p>
 
                     </a>
                 </li>
-
             </ul>
 
         </section>
@@ -91,7 +80,19 @@
 </template>
 
 <script setup>
+
+import { useData } from 'vitepress'
+const { theme, page, frontmatter } = useData()
+import { ref } from 'vue';
+
+var currentYear = ref(0)
+
+function changeIndex(index) {
+    currentYear.value = index
+}
+
 const props = defineProps({
-    config: Object
+    config: Object,
+    weekly: Object
 })
 </script>

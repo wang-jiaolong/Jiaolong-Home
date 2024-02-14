@@ -21,7 +21,10 @@
 
         <Doing :doings="config.content.doings"></Doing>
 
+        <Testimonials :projects = "config.content.projects"></Testimonials>
+
         <MySkills :skills="config.content.skills"></MySkills>
+
 
 
         <!--
@@ -37,6 +40,8 @@
 
 import MySkills from "../components/MySkills.vue"
 import Doing from "../components/Doing.vue"
+import Testimonials from "../components/Testimonials.vue"
+
 
 const props = defineProps({
     config: Object
