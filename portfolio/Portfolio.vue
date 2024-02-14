@@ -298,7 +298,7 @@
         <h2 class="h2 article-title">Blog</h2>
       </header>
   
-      <section class="blog-posts">
+      <!-- <section class="blog-posts">
   
         <ul class="blog-posts-list">
   
@@ -306,7 +306,7 @@
             <a href="#">
   
               <figure class="blog-banner-box">
-                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                <img src="./images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
               </figure>
   
               <div class="blog-content">
@@ -472,7 +472,7 @@
   
         </ul>
   
-      </section>
+      </section> -->
   
     </article>
   
