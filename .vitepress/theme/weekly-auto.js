@@ -39,7 +39,7 @@ function traverseFolder(directoryPath) {
   return weeklys
 }
 
-const directoryPath = './pages/weekly';
+const directoryPath = './weekly';
 
 const weeklys = traverseFolder(directoryPath).sort(compareTime)
 
