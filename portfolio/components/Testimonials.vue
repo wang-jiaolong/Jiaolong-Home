@@ -10,7 +10,7 @@
 
 <ul class="testimonials-list has-scrollbar">
 
-    <li v-for="item in projects" class="testimonials-item">
+    <li v-for="item in items" class="testimonials-item">
         <div class="content-card" data-testimonials-item>
 
             <figure class="testimonials-avatar-box">
@@ -82,6 +82,6 @@
 <script setup>
 
 const props = defineProps({
-    projects: Object
+    items: Object
 })
 </script>

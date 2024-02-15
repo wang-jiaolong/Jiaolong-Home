@@ -6,7 +6,7 @@
 
         <ul class="service-list">
 
-            <li v-for="item in doings" class="service-item">
+            <li v-for="item in items" class="service-item">
 
                 <div class="service-icon-box">
                     <img :src="item.icon" :alt="item.title" width="40">
@@ -28,7 +28,7 @@
 <script setup>
 
 const props = defineProps({
-    doings: Object
+    items: Object
 })
 
 </script>

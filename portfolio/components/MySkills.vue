@@ -5,7 +5,7 @@
 
   <ul class="skills-list content-card">
 
-    <li v-for="item in skills" class="skills-item">
+    <li v-for="item in items" class="skills-item">
 
       <div class="title-wrapper">
         <h5 class="h5">{{ item.title }}</h5>
@@ -26,7 +26,7 @@
 <script setup>
 
 const props = defineProps({
-  skills: Object
+  items: Object
 })
 
 </script>

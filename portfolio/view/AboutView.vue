@@ -18,11 +18,11 @@
   -->
 
 
-        <Doing :doings="config.content.doings"></Doing>
+        <Doing :items="config.content.doings"></Doing>
 
-        <Testimonials :projects = "config.content.projects"></Testimonials>
+        <Testimonials :items = "config.content.projects"></Testimonials>
 
-        <MySkills :skills="config.content.skills"></MySkills>
+        <MySkills :items="config.content.skills"></MySkills>
 
 
 
