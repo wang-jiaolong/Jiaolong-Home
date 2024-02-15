@@ -501,7 +501,7 @@ main {
 .about-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   line-height: 1.6;
 }
 

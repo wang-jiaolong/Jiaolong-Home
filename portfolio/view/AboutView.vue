@@ -10,7 +10,7 @@
         </header>
 
         <section class="about-text">
-            {{ config.content.about }}
+            <p v-html="config.content.about"></p>
         </section>
 
         <!--
