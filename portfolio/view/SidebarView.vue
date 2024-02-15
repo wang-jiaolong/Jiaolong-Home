@@ -1,6 +1,6 @@
 <template>
 
-  <aside class="sidebar active" data-sidebar>
+  <aside class="sidebar" :class="{active: infoActive}" data-sidebar>
   
   <div class="sidebar-info">
 
@@ -14,10 +14,9 @@
       <p class="title">{{ info.content }}</p>
     </div>
 
-    <button class="info_more-btn" data-sidebar-btn>
+    <button @click="changeActive()" class="info_more-btn" data-sidebar-btn>
       <span>Show Contacts</span>
-
-      <ion-icon name="chevron-down"></ion-icon>
+      <img src="/svg/arrow_down.svg" width="18">
     </button>
 
   </div>
@@ -108,10 +107,17 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+var infoActive = ref(false)
 
 const props = defineProps({
   info: Object,
 })
+
+function changeActive() {
+  infoActive.value = !infoActive.value
+}
 
 </script>
 
