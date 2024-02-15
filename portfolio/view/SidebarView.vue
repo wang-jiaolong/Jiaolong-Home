@@ -1,6 +1,6 @@
 <template>
 
-  <aside class="sidebar" data-sidebar>
+  <aside class="sidebar active" data-sidebar>
   
   <div class="sidebar-info">
 

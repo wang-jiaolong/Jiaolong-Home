@@ -13,7 +13,6 @@
             {{ config.content.about }}
         </section>
 
-
         <!--
     - service
   -->
