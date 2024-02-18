@@ -45,18 +45,20 @@ const config = {
           {title: "Vision", icon:iconPath + "vision.png", url: ""},
         ]
       },
-      {
-        title: "Others",
-        items: [
-          {title: "Percento", icon:iconPath + "percento.png", url: ""},
-        ]
-      },
+
 
 
     ]
   }
 
 }
+
+      // {
+      //   title: "Others",
+      //   items: [
+      //     {title: "Percento", icon:iconPath + "percento.png", url: ""},
+      //   ]
+      // },
 
 </script>
 
