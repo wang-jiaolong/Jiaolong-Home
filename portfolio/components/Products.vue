@@ -1,0 +1,59 @@
+<template>
+    <section class="clients">
+        <h3 class="h3 clients-title">Favorite Apps</h3>
+        <ul class="clients-list has-scrollbar">
+            <div v-for="group in items" class="content-card">
+                <h4 class="h4" data-testimonials-title>{{ group.title }}</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                    <ul class="clients-list has-scrollbar">
+
+                        <li v-for="item in group.items" class="apps-item">
+                            <a :href="item.url">
+                                <img :src="item.icon" :alt="item.title">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </ul>
+    </section>
+</template>
+
+
+<script setup>
+
+const props = defineProps({
+  items: Object
+})
+
+</script>
+
+
+<style lang="less">
+.apps-item img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.clients-list {
+    gap: 15px!important;
+    margin: 0 -30px!important;
+    padding: 15px 35px 0px 35px!important;
+}
+
+.clients-title {
+    margin-bottom: 20px;
+}
+
+.content-card {
+    padding-top: 20px!important;
+}
+
+.data-testimonials-title {
+    font-weight: bold!important;
+    font-size: var(--fs-2)!important;
+}
+</style>

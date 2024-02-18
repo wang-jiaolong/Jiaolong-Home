@@ -13,6 +13,7 @@ const { theme, page, frontmatter } = useData()
 import Portfolio from './portfolio/Portfolio.vue'
 
 const imagePath = '/images/'
+const iconPath = '/images/icon/'
 
 const config = {
   active:"about",
@@ -33,6 +34,25 @@ const config = {
     projects: [
       {title: "事线 - 串事成线",description: "多项目时间线记录工具", icon:imagePath + "eventline.jpg", url: ""},
       {title: "物品指南 - 你的生活数据库",description: "打造你的生活数据库", icon:imagePath + "mythings.jpg", url: ""},
+    ],
+    apps:[
+      {
+        title: "Productivity",
+        items: [
+          {title: "notion", icon:iconPath + "notion.png", url: ""},
+          {title: "linear", icon:iconPath + "linear.png", url: ""},
+          {title: "Craft", icon:iconPath + "craft.png", url: ""},
+          {title: "Vision", icon:iconPath + "vision.png", url: ""},
+        ]
+      },
+      {
+        title: "Others",
+        items: [
+          {title: "Percento", icon:iconPath + "percento.png", url: ""},
+        ]
+      },
+
+
     ]
   }
 

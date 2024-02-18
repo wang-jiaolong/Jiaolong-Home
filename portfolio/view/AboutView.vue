@@ -17,14 +17,13 @@
     - service
   -->
 
-
         <Doing :items="config.content.doings"></Doing>
 
         <Testimonials :items = "config.content.projects"></Testimonials>
 
         <MySkills :items="config.content.skills"></MySkills>
 
-
+        <Products :items = "config.content.apps"></Products>
 
         <!--
     - clients
@@ -40,6 +39,7 @@
 import MySkills from "../components/MySkills.vue"
 import Doing from "../components/Doing.vue"
 import Testimonials from "../components/Testimonials.vue"
+import Products from "../components/Products.vue"
 
 
 const props = defineProps({
