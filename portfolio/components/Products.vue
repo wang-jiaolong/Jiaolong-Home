@@ -52,8 +52,8 @@ const props = defineProps({
     padding-top: 20px!important;
 }
 
-.data-testimonials-title {
-    font-weight: bold!important;
-    font-size: var(--fs-2)!important;
+.h4 {
+    font-weight: 600!important;
+    font-size: var(--fs-6)!important;
 }
 </style>
