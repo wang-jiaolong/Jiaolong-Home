@@ -41,8 +41,17 @@ const props = defineProps({
 .clients-list {
     gap: 15px!important;
     margin: 0 -30px!important;
+    padding: 0px 35px 0px 35px!important;
+}
+
+.testimonials-text {
+    .clients-list {
+    gap: 15px!important;
+    margin: 0 -30px!important;
     padding: 15px 35px 0px 35px!important;
 }
+}
+
 
 .clients-title {
     margin-bottom: 20px;
