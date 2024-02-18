@@ -23,7 +23,7 @@
 
         <MySkills :items="config.content.skills"></MySkills>
 
-        <Products :items = "config.content.apps"></Products>
+        <!-- <Products :items = "config.content.apps"></Products> -->
 
         <!--
     - clients
