@@ -38,7 +38,7 @@ const props = defineProps({
 }
 
 .clients-list {
-    gap: 15px!important;
+    // gap: 15px!important;
     margin: 0 -30px!important;
     padding: 0px 35px 0px 35px!important;
 }

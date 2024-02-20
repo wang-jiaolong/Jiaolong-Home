@@ -503,6 +503,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   line-height: 1.6;
+  padding-top: 10px;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -733,7 +734,10 @@ main {
  * #clients 
  */
 
-.clients { margin-bottom: 15px; }
+.clients { 
+   margin-bottom: 15px;
+   margin-top: 40px;
+  }
 
 .clients-list {
   display: flex;
@@ -751,17 +755,25 @@ main {
 }
 
 .clients-item {
-  min-width: 50%;
+  min-width: 40%;
+  // width: 130px;
   scroll-snap-align: start;
 }
 
 .clients-item img {
+  object-fit: cover;
   width: 100%;
-  filter: grayscale(1);
+  height: 180px;
+  overflow: hidden;
+  // filter: grayscale(1);
   transition: var(--transition-1);
+  border-radius: 5px;
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { 
+  filter: grayscale(0); 
+  transition: var(--transition-1);
+}
 
 
 
@@ -1249,7 +1261,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  /* .clients-item { min-width: calc(33.33% - 10px); } */
 
 
 
@@ -1421,10 +1433,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .testimonials-title { margin-bottom: 25px; }
 
   .testimonials-list {
-    gap: 30px;
+    gap: 25px;
     margin: 0 -30px;
     padding: 30px;
     padding-bottom: 0px;
+    padding-top: 20px;
   }
 
   .content-card {
@@ -1438,13 +1451,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .testimonials-avatar-box img { 
-    width: 60px; 
+    width: 55px; 
     border-radius: 12px;
   }
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 85px;
+    margin-left: 75px;
   }
 
   .testimonials-text {
@@ -1487,13 +1500,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* clients */
 
   .clients-list {
-    gap: 50px;
+    gap: 25px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  /* .clients-item { min-width: calc(33.33% - 35px); } */
 
 
 
@@ -1754,7 +1767,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  /* .clients-item { min-width: calc(25% - 38px); } */
 
 
 

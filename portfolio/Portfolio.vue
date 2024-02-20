@@ -430,7 +430,7 @@
   
   <style>
   /* 导入并使用外部的 CSS 文件 */
-  @import './assets/css/style.css';
+  @import './assets/css/style.less';
 </style>
 
 <script setup>

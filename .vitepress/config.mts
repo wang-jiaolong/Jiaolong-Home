@@ -32,11 +32,12 @@ export default defineConfig({
             // : pageData.frontmatter.image
       }])
   },
+  appearance: 'force-dark',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'About', link: '/' },
+      { text: 'Weekly', link: '/weekly' }
     ],
 
     // sidebar: [
@@ -49,9 +50,9 @@ export default defineConfig({
     //   }
     // ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ],
     weekly: weekly,
     info: {
       avatar: imagePath + "avatar.png",
