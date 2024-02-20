@@ -45,8 +45,8 @@ const config = {
       }
     ],
     projects: [
-      {title: "事线 - 串事成线",description: "多项目时间线记录工具", icon:imagePath + "eventline.jpg", url: ""},
-      {title: "物品指南 - 你的生活数据库",description: "打造你的生活数据库", icon:imagePath + "mythings.jpg", url: ""},
+      {title: "事线 - 串事成线",description: "多项目时间线记录工具", icon:imagePath + "eventline.jpg", url: "", badge: "已上架"},
+      {title: "物品指南 - 你的生活数据库",description: "打造你的生活数据库", icon:imagePath + "mythings.jpg", url: "", badge: "已上架"},
     ],
     apps:[
       {

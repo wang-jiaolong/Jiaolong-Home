@@ -17,8 +17,8 @@
                 <img :src="item.icon" alt="Daniel lewis" width="60" data-testimonials-avatar>
             </figure>
 
-            <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ item.title }}</h4>
-
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ item.title }} <Badge type="tip" :text="item.badge" /></h4>
+            
             <div class="testimonials-text" data-testimonials-text>
                 <p>{{ item.description }}</p>
             </div>

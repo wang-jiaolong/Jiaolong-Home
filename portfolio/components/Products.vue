@@ -4,7 +4,6 @@
         <ul class="clients-list has-scrollbar">
             <div v-for="group in items" class="content-card">
                 <h4 class="h4" data-testimonials-title>{{ group.title }}</h4>
-
                 <div class="testimonials-text" data-testimonials-text>
                     <ul class="clients-list has-scrollbar">
 
