@@ -1,7 +1,7 @@
 <template>
     <div class="product">
         <section class="clients">
-        <h3 class="h3 clients-title">Favorite Apps</h3>
+        <h3 class="h3 clients-title">Favorite Products</h3>
         <ul class="clients-list has-scrollbar">
             <div v-for="group in items" class="content-card">
                 <h4 class="h4" data-testimonials-title>{{ group.title }}</h4>
