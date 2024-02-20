@@ -14,7 +14,7 @@
         <div class="content-card" data-testimonials-item>
 
             <figure class="testimonials-avatar-box">
-                <img :src="item.icon" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar>
             </figure>
 
             <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ item.title }} <Badge type="tip" :text="item.badge" /></h4>
@@ -85,3 +85,11 @@ const props = defineProps({
     items: Object
 })
 </script>
+
+
+<style lang="less">
+.testimonials-avatar-box img{
+    width: 50px;
+    border-radius: 10px;
+}
+</style>

@@ -513,7 +513,7 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service { margin-bottom: 40px; }
 
 .service-title { margin-bottom: 20px; }
 
@@ -561,15 +561,18 @@ main {
  * #testimonials 
  */
 
-.testimonials { margin-bottom: 30px; }
+.testimonials { margin-top: 50px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.testimonials-title { 
+  margin-bottom: 20px; 
+}
 
 .testimonials-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
+  gap: 35px;
   margin: 0 -15px;
   padding: 25px 15px;
   padding-bottom: 35px;
@@ -588,13 +591,16 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(15px, -25px);
+  transform: translate(20px, -15px);
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.testimonials-item-title { 
+  margin-bottom: 7px;
+  margin-left: 75px;
+}
 
 .testimonials-text {
   color: var(--light-gray);
@@ -835,7 +841,7 @@ main {
  * skills 
  */
 
-.skill { margin-top: 35px; }
+.skill { margin-top: 50px; }
 
 .skills-title { margin-bottom: 20px; }
 
@@ -1418,7 +1424,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 30px;
     margin: 0 -30px;
     padding: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 0px;
   }
 
   .content-card {
@@ -1433,7 +1439,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-avatar-box img { 
     width: 60px; 
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   .testimonials-item-title {
@@ -1740,6 +1746,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* testimonials */
 
   .testimonials-item { min-width: calc(50% - 15px); }
+
+  .testimonials-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
 
   /* clients */
 
