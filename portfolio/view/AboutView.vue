@@ -21,7 +21,7 @@
 
         <Testimonials :items = "config.content.projects"></Testimonials>
 
-        <MySkills :items="config.content.skills"></MySkills>
+        <MySkills :items="config.content.progress"></MySkills>
 
         <!-- <Products :items = "config.content.apps"></Products> -->
 

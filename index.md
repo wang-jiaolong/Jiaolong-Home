@@ -26,10 +26,23 @@ const config = {
       {icon: imagePath + "icon-app.svg", title: "iOS Developer", description: "一个正在成长的iOS独立开发者。"},
       {icon: imagePath + "icon-photo.svg", title: "Photography", description: "正在尝试着拍摄一些有趣的东西。"},
     ],
-    skills:[
-      {title:"编程", value:33.3},
-      {title:"摄影", value:10},
-      {title:"剪辑", value:10},
+    progress: [
+      {
+        title: "Skills",
+        items: [
+          {title:"编程", value:33.3},
+          {title:"摄影", value:10},
+          {title:"剪辑", value:10}
+        ]
+      },
+      {
+        title: "OKRs",
+        items: [
+          {title:"事线App端基础体验优化", description:"2024-2025" , value:10},
+          {title:"Full-Stack Developer", description:"2030年" , value:10},
+          {title:"数字游民", description:"2035年" , value:33.3}
+        ]
+      }
     ],
     projects: [
       {title: "事线 - 串事成线",description: "多项目时间线记录工具", icon:imagePath + "eventline.jpg", url: ""},
