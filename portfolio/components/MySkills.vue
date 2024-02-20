@@ -10,7 +10,6 @@
       <div class="title-wrapper">
         <h5 class="h5">{{ cell.title }}</h5>
         <data :value="cell.value">{{ cell.value }}%</data>
-        <h6>{{ cell.description }}</h6>
       </div>
 
       <div class="skill-progress-bg">
