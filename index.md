@@ -30,9 +30,9 @@ const config = {
       {
         title: "Skills",
         items: [
-          {title:"编程", value:33.3},
-          {title:"摄影", value:10},
-          {title:"剪辑", value:10}
+          {title:"🧑🏻‍💻 编程", value:33.3},
+          {title:"📷 摄影", value:10},
+          {title:"🎬 剪辑", value:10}
         ]
       },
       {
