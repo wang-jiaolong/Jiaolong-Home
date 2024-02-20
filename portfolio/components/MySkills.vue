@@ -1,29 +1,28 @@
 <template>
-<section v-for="item in items" class="skill">
-  
-  <h3 class="h3 skills-title">{{ item.title }}</h3>
+  <section v-for="item in items" class="skill">
 
-  <ul class="skills-list content-card">
+    <h3 class="h3 skills-title">{{ item.title }}</h3>
 
-    <li v-for="cell in item.items" class="skills-item">
+    <ul class="skills-list content-card">
 
-      <div class="title-wrapper">
-        <div class="leader">
-          <h5 class="h5">{{ cell.title }}</h5>
-          <data :value="cell.value">{{ cell.value }}%</data>
+      <li v-for="cell in item.items" class="skills-item">
+
+        <div class="title-wrapper">
+          <div class="leader">
+            <h5 class="h5">{{ cell.title }}</h5>
+            <data :value="cell.value">{{ cell.value }}%</data>
+          </div>
+          <div class="trailing">{{ cell.date }}</div>
+
         </div>
-        <div class="trailing">{{ cell.date }}</div>
-        
-      </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" :style="{ width: cell.value + '%' }"></div>
+        </div>
+      </li>
 
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" :style="{ width: cell.value + '%' }"></div>
-      </div>
-    </li>
-    
-  </ul>
+    </ul>
 
-</section>
+  </section>
 </template>
 
 <script setup>
@@ -36,7 +35,6 @@ const props = defineProps({
 
 
 <style lang="less">
-
 .title-wrapper {
   .leader {
     display: flex;
@@ -47,7 +45,7 @@ const props = defineProps({
   .trailing {
     font-size: var(--fs-7);
   }
+
   justify-content: space-between;
 }
-
 </style>
