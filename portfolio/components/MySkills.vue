@@ -19,7 +19,6 @@
       <div class="skill-progress-bg">
         <div class="skill-progress-fill" :style="{ width: cell.value + '%' }"></div>
       </div>
-
     </li>
     
   </ul>
@@ -50,4 +49,5 @@ const props = defineProps({
   }
   justify-content: space-between;
 }
+
 </style>
