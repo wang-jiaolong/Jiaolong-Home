@@ -1,5 +1,6 @@
 <template>
-    <section class="clients">
+    <div class="product">
+        <section class="clients">
         <h3 class="h3 clients-title">Favorite Apps</h3>
         <ul class="clients-list has-scrollbar">
             <div v-for="group in items" class="content-card">
@@ -19,6 +20,8 @@
             </div>
         </ul>
     </section>
+    </div>
+
 </template>
 
 
@@ -37,10 +40,9 @@ const props = defineProps({
     border-radius: 10px;
 }
 
-.clients-list {
-    // gap: 15px!important;
-    margin: 0 -30px!important;
-    padding: 0px 35px 0px 35px!important;
+.product .clients-list {
+    margin: unset;
+    padding: unset;
 }
 
 .testimonials-text {
