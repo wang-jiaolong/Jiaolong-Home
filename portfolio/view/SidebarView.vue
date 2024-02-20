@@ -121,3 +121,11 @@ function changeActive() {
 
 </script>
 
+
+<style lang="less">
+.contact-info {
+  font-weight: var(--fw-600);
+  font-size: var(--fs-8);
+}
+
+</style>

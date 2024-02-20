@@ -86,7 +86,11 @@ export default defineConfig({
         title: "公众号",
         url: "https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0NjQ5NTMyNg==&action=getalbum&album_id=3319806656054198273#wechat_redirect",
         icon: imagePath + "icon/gzh.png"
-      }]
+      }],
     },
+    footer: {
+      // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      copyright: 'Copyright © 2024-2024 Jiaolong'
+    }
   }
 })

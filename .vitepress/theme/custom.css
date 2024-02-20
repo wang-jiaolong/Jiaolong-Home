@@ -15,3 +15,15 @@
  h3 {
     font-weight: bold;
  }
+
+ .aside-curtain {
+    display: none;
+ }
+
+ body { background:  hsl(0, 0%, 7%); }
+
+ .VPNavBar, .VPFooter { background:  hsl(0, 0%, 7%)!important; }
+
+.VPFooter {
+    border-top: unset!important;
+}
