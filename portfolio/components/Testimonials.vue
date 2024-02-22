@@ -17,7 +17,12 @@
                 
             </figure> -->
 
-            <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar />
+            
+
+            <div class="firstLine">
+                <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar />
+                <span class="lightDot"></span>
+            </div>
 
             <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ item.title }} <Badge type="tip" :text="item.badge" /></h4>
 
@@ -91,7 +96,12 @@ const props = defineProps({
 
 <style lang="less">
 .content-card {
-    // text-align: center;
+    .lightDot {
+        width: 1px;
+        height: 1px;
+        background-color: green;
+        border-radius: 99;
+    }
 }
 
 .content-card img{
