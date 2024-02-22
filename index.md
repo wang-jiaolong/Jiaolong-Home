@@ -59,11 +59,20 @@ const config = {
           {title: "notion", icon:iconPath + "notion.png", url: ""},
           {title: "linear", icon:iconPath + "linear.png", url: ""},
           {title: "Craft", icon:iconPath + "craft.png", url: ""},
-          {title: "Vision", icon:iconPath + "vision.png", url: ""},
+          // {title: "Vision", icon:iconPath + "vision.png", url: ""},
         ]
       },
 
 
+
+    ],
+    books: [
+      {title: "解密Instagram", img: "/images/books/instagram.jpg", value:35},
+      {title: "Steve Jobs", img: "/images/books/steve.jpg", value:25},
+      {title: "Refactoring UI", img: "/images/books/refactoringUI.jpeg", value:33},
+      {title: "Clean Code", img: "/images/books/cleanCode.jpg", value:5},
+      {title: "facebook", img: "/images/books/facebook.jpg", value:0},
+      {title: "小米传", img: "/images/books/xiaomi.jpg", value:100},
 
     ]
   }

@@ -23,7 +23,10 @@
 
         <MySkills :items="config.content.progress"></MySkills>
 
-        <!-- <Products :items = "config.content.apps"></Products> -->
+        <Products :items = "config.content.apps"></Products>
+
+
+        <!-- <Clients :items="config.content.books"></Clients> -->
 
         <!--
     - clients
@@ -40,6 +43,7 @@ import MySkills from "../components/MySkills.vue"
 import Doing from "../components/Doing.vue"
 import Testimonials from "../components/Testimonials.vue"
 import Products from "../components/Products.vue"
+import Clients from "../components/Clients.vue"
 
 
 const props = defineProps({

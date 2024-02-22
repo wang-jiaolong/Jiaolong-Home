@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="service-content-box">
-                    <h4 class="h4 service-item-title">{{ item.title }}</h4>
+                    <h4 class="service-item-title">{{ item.title }}</h4>
 
                     <p class="service-item-text">{{ item.description }}</p>
                 </div>
@@ -33,3 +33,10 @@ const props = defineProps({
 
 </script>
 
+
+<style lang="less">
+.service-item-title {
+    font-weight: var(--fw-600);
+}
+
+</style>
