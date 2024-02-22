@@ -38,6 +38,43 @@ const props = defineProps({
 
 
 <style lang="less">
+
+.clients-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.clients-item {
+  min-width: 40%;
+  scroll-snap-align: start;
+}
+
+.clients-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  // filter: grayscale(1);
+  transition: var(--transition-1);
+  border-radius: 5px;
+}
+
+.clients-item img:hover { 
+  filter: grayscale(0); 
+  transition: var(--transition-1);
+}
+
+
 .book-title {
     font-size: var(--fs-8);
     font-weight: var(--fw-600);

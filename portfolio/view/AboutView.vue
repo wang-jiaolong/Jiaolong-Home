@@ -19,11 +19,11 @@
 
         <Doing :items="config.content.doings"></Doing>
 
-        <Testimonials :items = "config.content.projects"></Testimonials>
+        <Testimonials :items="config.content.projects"></Testimonials>
 
         <MySkills :items="config.content.progress"></MySkills>
 
-        <Products :items = "config.content.apps"></Products>
+        <Products :items="config.content.apps"></Products>
 
 
         <!-- <Clients :items="config.content.books"></Clients> -->
@@ -50,3 +50,20 @@ const props = defineProps({
     config: Object
 })
 </script>
+
+<style lang="less">
+
+.about-text {
+    margin-bottom: 40px;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+    padding-top: 10px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+</style>

@@ -1,41 +1,40 @@
 <template>
     <div class="product">
         <section class="clients">
-        <h3 class="h3 clients-title">Favorite Products</h3>
-        <ul class="clients-list has-scrollbar">
-            <div v-for="group in items" class="content-card">
-                <h4 class="h4" data-testimonials-title>{{ group.title }}</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                    <ul class="clients-list has-scrollbar">
+            <h3 class="h3 clients-title">Favorite Products</h3>
+            <ul class="clients-list has-scrollbar">
+                <div v-for="group in items" class="content-card">
+                    <h4 class="h4" data-testimonials-title>{{ group.title }}</h4>
+                    <div class="testimonials-text" data-testimonials-text>
+                        <ul class="clients-list has-scrollbar">
 
-                        <li v-for="item in group.items" class="apps-item">
-                            <a :href="item.url">
-                                <img :src="item.icon" :alt="item.title">
-                            </a>
-                        </li>
-                    </ul>
+                            <li v-for="item in group.items" class="apps-item">
+                                <a :href="item.url">
+                                    <img :src="item.icon" :alt="item.title">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
 
                 </div>
-
-            </div>
-        </ul>
-    </section>
+            </ul>
+        </section>
     </div>
-
 </template>
 
 
 <script setup>
 
 const props = defineProps({
-  items: Object
+    items: Object
 })
 
 </script>
 
 
 <style lang="less">
-.apps-item img{
+.apps-item img {
     width: 50px;
     border-radius: 10px;
 }
@@ -47,10 +46,9 @@ const props = defineProps({
 
 .testimonials-text {
     .clients-list {
-    gap: 15px!important;
-    margin: 0 -30px!important;
-    padding: 15px 35px 0px 35px!important;
-}
+        gap: 15px;
+        scroll-padding-inline: 45px;
+    }
 }
 
 
@@ -59,11 +57,16 @@ const props = defineProps({
 }
 
 .content-card {
-    padding-top: 20px!important;
+    padding-top: 20px;
+
+    h4 {
+        margin-top: -5px;
+        padding-bottom: 10px;
+    }
 }
 
 .h4 {
-    font-weight: 600!important;
-    font-size: var(--fs-6)!important;
+    font-weight: 600 !important;
+    font-size: var(--fs-6) !important;
 }
 </style>
