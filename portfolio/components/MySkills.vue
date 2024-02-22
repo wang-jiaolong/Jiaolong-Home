@@ -18,6 +18,16 @@
         <div class="skill-progress-bg">
           <div class="skill-progress-fill" :style="{ width: cell.value + '%' }"></div>
         </div>
+
+        <!-- <div class="subSkill">
+          <div v-for="subItem in cell.subItems" class="subSkill-item">
+            <h5 class="h5">{{ subItem.title }}</h5>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" :style="{ width: subItem.value + '%' }"></div>
+            </div>
+          </div>
+
+        </div> -->
       </li>
 
     </ul>
@@ -47,5 +57,9 @@ const props = defineProps({
   }
 
   justify-content: space-between;
+}
+
+.subSkill-item {
+  display: flex;
 }
 </style>

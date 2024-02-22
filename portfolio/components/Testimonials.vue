@@ -13,12 +13,14 @@
     <li v-for="item in items" class="testimonials-item">
         <div class="content-card" data-testimonials-item>
 
-            <figure class="testimonials-avatar-box">
-                <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar>
-            </figure>
+            <!-- <figure class="testimonials-avatar-box">
+                
+            </figure> -->
+
+            <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar />
 
             <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ item.title }} <Badge type="tip" :text="item.badge" /></h4>
-            
+
             <div class="testimonials-text" data-testimonials-text>
                 <p>{{ item.description }}</p>
             </div>
@@ -88,8 +90,14 @@ const props = defineProps({
 
 
 <style lang="less">
-.testimonials-avatar-box img{
+.content-card {
+    text-align: center;
+}
+
+.content-card img{
     width: 50px;
     border-radius: 10px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 </style>
