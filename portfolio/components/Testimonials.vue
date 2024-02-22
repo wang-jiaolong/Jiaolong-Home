@@ -91,13 +91,13 @@ const props = defineProps({
 
 <style lang="less">
 .content-card {
-    text-align: center;
+    // text-align: center;
 }
 
 .content-card img{
     width: 50px;
     border-radius: 10px;
-    margin: auto;
+    // margin: auto;
     margin-bottom: 15px;
 }
 </style>
