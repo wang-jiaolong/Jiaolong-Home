@@ -9,15 +9,24 @@
 
         <section class="projects">
 
+            <div class="heatmap">
+                <div class="cell-list">
+                    <template v-for="i in getWeekNumber()">
+                        <a v-if="i != 3" class="cell" alt="i"></a>
+                        <a v-else>🐦</a>
+                    </template>
+                    
+                </div>
+            </div>
+
             <ul class="filter-list">
-
                 <li v-for=" (year, index) in theme.weekly" class="filter-item">
-                    <button @click="changeIndex(index)" :class="{active: currentYear === index}" data-filter-btn>{{ year.title + "(" + year.items.length + ")" }}</button>
+                    <button @click="changeIndex(index)" :class="{ active: currentYear === index }" data-filter-btn>{{
+                        year.title + "(" + year.items.length + ")" }}</button>
                 </li>
-
             </ul>
 
-        
+
             <div class="filter-select-box">
 
                 <button class="filter-select" data-select>
@@ -54,7 +63,8 @@
 
             <ul class="project-list">
 
-                <li v-for="item in  theme.weekly[currentYear].items" class="project-item  active" data-filter-item data-category="web development">
+                <li v-for="item in  heatMap" class="project-item  active" data-filter-item
+                    data-category="web development">
                     <a :href="item.link">
 
                         <figure class="project-img">
@@ -62,13 +72,14 @@
                                 <!-- <ion-icon name="eye-outline"></ion-icon> -->
                                 {{ item.week.toUpperCase() }}
                             </div>
-                            <img :src="'/weekly/' + new Date(item.date).getFullYear() + '/' + item.week.toLowerCase() + '.jpg' " loading="lazy" />
+                            <img :src="'/weekly/' + new Date(item.date).getFullYear() + '/' + item.week.toLowerCase() + '.jpg'"
+                                loading="lazy" />
                         </figure>
 
-                        
-                        <h3 class="project-title">{{  item.week.toUpperCase() + ' · ' + item.title }}</h3>
 
-                        <p class="project-category">{{new Date(item.date).toLocaleDateString() }}</p>
+                        <h3 class="project-title">{{ item.week.toUpperCase() + ': ' + item.title }}</h3>
+
+                        <p class="project-category">{{ new Date(item.date).toLocaleDateString() }}</p>
 
                     </a>
                 </li>
@@ -85,14 +96,65 @@ import { useData } from 'vitepress'
 const { theme, page, frontmatter } = useData()
 import { ref } from 'vue';
 
-var currentYear = ref(0)
+var currentYear = ref(2024)
 
 function changeIndex(index) {
     currentYear.value = index
 }
+
+
+function getWeekNumber() {
+    // Copy date so don't modify original
+    var date = new Date();
+    // Set to nearest Thursday: current date + 4 - current day number
+    // Make Sunday's day number 7
+    date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
+    // Get first day of year
+    var yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+    // Calculate full weeks to nearest Thursday
+    var weekNo = Math.ceil((((date - yearStart) / 86400000) + 1) / 7);
+    return weekNo;
+  }
+
+var heatMap = ref([])
+
+
+function initHeatMap() {
+    var j = 0;
+    for (let i = 0; i < getWeekNumber(); i++) {
+        console.log(theme.weekly[])
+        // if (theme.weekly[2024].items[j].title == 'w'+i) {
+        //     heatMap.value[i] = theme.weekly[currentYear].items[j]
+        //     j++
+        // } else {
+        //     heatMap.value[i].value = null
+        // }
+    }   
+
+}
+
+initHeatMap()
 
 const props = defineProps({
     config: Object,
     weekly: Object
 })
 </script>
+
+<style lang="less">
+.heatmap {
+    .cell-list {
+        display: flex;
+        gap:5px;
+        padding-bottom: 15px;
+        align-items: center;
+
+        .cell {
+            width: 15px;
+            height: 15px;
+            background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+            border-radius: 3px;
+        }
+    }
+}
+</style>
