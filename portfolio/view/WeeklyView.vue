@@ -9,7 +9,7 @@
 
         <section class="projects">
 
-            <div class="heatmap">
+            <!-- <div class="heatmap">
                 <div class="cell-list">
                     <template v-for="i in getWeekNumber()">
                         <a v-if="i != 3" class="cell" alt="i"></a>
@@ -17,7 +17,7 @@
                     </template>
                     
                 </div>
-            </div>
+            </div> -->
 
             <ul class="filter-list">
                 <li v-for=" (year, index) in theme.weekly" class="filter-item">
@@ -63,7 +63,7 @@
 
             <ul class="project-list">
 
-                <li v-for="item in theme.weekly[0].items" class="project-item  active" data-filter-item
+                <li v-for="item in theme.weekly[currentYear].items" class="project-item  active" data-filter-item
                     data-category="web development">
                     <a :href="item.link">
 
@@ -119,21 +119,7 @@ function getWeekNumber() {
 var heatMap = ref([])
 
 
-function initHeatMap() {
-    var j = 0;
-    for (let i = 0; i < getWeekNumber(); i++) {
-        console.log(theme.weekly)
-        // if (theme.weekly[2024].items[j].title == 'w'+i) {
-        //     heatMap.value[i] = theme.weekly[currentYear].items[j]
-        //     j++
-        // } else {
-        //     heatMap.value[i].value = null
-        // }
-    }   
-
-}
-
-initHeatMap()
+// initHeatMap()
 
 const props = defineProps({
     config: Object,
