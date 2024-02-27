@@ -4,7 +4,7 @@
     "vitepress": "1.0.0-rc.42"
   },
   "scripts": {
-    "docs:dev": "node pre.js && vitepress dev",
+    "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },

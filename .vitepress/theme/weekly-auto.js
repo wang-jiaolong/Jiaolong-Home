@@ -23,7 +23,6 @@ function traverseFolder(directoryPath) {
         const { data } = matter(fileContent);
         // weeklys[filePath.replace(/\\/g, '/').slice(5)] = "pages" + data.permalink + ".md" 
         weeklys.push({
-          // title: data.week + "・" + data.title,
           title: data.title,
           date: new Date(data.date).toLocaleDateString(),
           link: filePath.replace(/\\/g, '/').slice(0, -3),
@@ -65,6 +64,8 @@ weeklys.forEach(item => {
 });
 
 export const weekly =  data.sort(compareTime)
+
+console.log(weekly)
 
 function compareTime(a, b) {
   return new Date(b.date) - new Date(a.date);

@@ -63,7 +63,7 @@
 
             <ul class="project-list">
 
-                <li v-for="item in  heatMap" class="project-item  active" data-filter-item
+                <li v-for="item in theme.weekly[0].items" class="project-item  active" data-filter-item
                     data-category="web development">
                     <a :href="item.link">
 
@@ -96,7 +96,7 @@ import { useData } from 'vitepress'
 const { theme, page, frontmatter } = useData()
 import { ref } from 'vue';
 
-var currentYear = ref(2024)
+var currentYear = ref(0)
 
 function changeIndex(index) {
     currentYear.value = index
@@ -122,7 +122,7 @@ var heatMap = ref([])
 function initHeatMap() {
     var j = 0;
     for (let i = 0; i < getWeekNumber(); i++) {
-        console.log(theme.weekly[])
+        console.log(theme.weekly)
         // if (theme.weekly[2024].items[j].title == 'w'+i) {
         //     heatMap.value[i] = theme.weekly[currentYear].items[j]
         //     j++
