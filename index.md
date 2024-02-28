@@ -35,16 +35,16 @@ const config = {
           {title:"🎬 剪辑", value:10}
         ]
       },
-      // {
-      //   title: "Stack",
-      //   items: [
-      //     {title:"Swift", value:30},
-      //     {title:"OC", value:25},
-      //     {title:"Java", value:20},
-      //     {title:"Vue", value:15},
-      //     {title:"达芬奇", value:20}
-      //   ]
-      // },
+      {
+        title: "Code Stack",
+        items: [
+          {title:"🥳 Swift", value:45},
+          {title:"🤨 Objective-C", value:30},
+          {title:"🤯 Java", value:20},
+          {title:"😶‍🌫️ Vue+HTML+CSS）", value:20},
+          {title:"🥶 Python", value:20},
+        ]
+      },
       {
         title: "OKRs",
         items: [
