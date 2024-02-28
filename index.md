@@ -40,7 +40,7 @@ const config = {
         items: [
           {title:"🥳 Swift", value:45},
           {title:"🤨 Objective-C", value:30},
-          {title:"🤯 Java", value:20},
+          {title:"🤯 Java", value:25},
           {title:"😶‍🌫️ Vue + HTML + CSS", value:20},
           {title:"🥶 Python", value:20},
         ]
