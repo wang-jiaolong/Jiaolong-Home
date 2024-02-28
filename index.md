@@ -28,7 +28,7 @@ const config = {
     ],
     progress: [
       {
-        title: "Skills",
+        title: "Area",
         items: [
           {title:"🧑🏻‍💻 编程", value:33.3},
           {title:"📷 摄影", value:10},
@@ -36,7 +36,7 @@ const config = {
         ]
       },
       {
-        title: "Code Stack",
+        title: "Skills",
         items: [
           {title:"🥳 Swift", value:45},
           {title:"🤨 Objective-C", value:30},
