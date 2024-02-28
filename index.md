@@ -71,7 +71,7 @@ const config = {
         title: "",
         items: [
           {title: "notion", icon:iconPath + "notion.png", url: ""},
-          {title: "linear", icon:iconPath + "linear.png", url: ""},
+          // {title: "linear", icon:iconPath + "linear.png", url: ""},
           // {title: "Craft", icon:iconPath + "craft.png", url: ""},
           // {title: "Vision", icon:iconPath + "vision.png", url: ""},
         ]
