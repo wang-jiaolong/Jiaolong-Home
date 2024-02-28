@@ -42,8 +42,8 @@ const config = {
           {title:"🤨 Objective-C", value:30},
           {title:"🤯 Java", value:25},
           {title:"😶‍🌫️ Vue + HTML + CSS", value:20},
-          {title:"🥶 Python", value:20},
-          {title:"😵 Kotlin", value:1},
+          {title:"😵 Python", value:20},
+          {title:"🥶 Kotlin", value:1},
         ]
       },
       {
