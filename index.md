@@ -28,6 +28,18 @@ const config = {
     ],
     progress: [
       {
+        title: "OKRs",
+        items: [
+          {title:"🎓 顺利毕业", date:"2024.06" , value:50 , subItems: [
+              {title:"小论文", value:15},
+               {title:"大论文", value:15},
+          ]},
+          {title:"📱 事线App端重构优化", date:"2024 - 2025" , value:15},
+          {title:"🧑🏻‍💻 Full-Stack Developer", date:"< 2030" , value:10},
+          {title:"🚗 数字游民计划", date:"< 2035" , value:1.1}
+        ]
+      },
+      {
         title: "Area",
         items: [
           {title:"🧑🏻‍💻 编程", value:33.3},
@@ -44,18 +56,6 @@ const config = {
           {title:"😶‍🌫️ Vue + HTML + CSS", value:20},
           {title:"😵 Python", value:20},
           {title:"🥶 Kotlin", value:1},
-        ]
-      },
-      {
-        title: "OKRs",
-        items: [
-          {title:"🎓 顺利毕业", date:"2024.06" , value:50 , subItems: [
-              {title:"小论文", value:15},
-               {title:"大论文", value:15},
-          ]},
-          {title:"📱 事线App端重构优化", date:"2024 - 2025" , value:15},
-          {title:"🧑🏻‍💻 Full-Stack Developer", date:"< 2030" , value:10},
-          {title:"🚗 数字游民计划", date:"< 2035" , value:1.1}
         ]
       }
 
@@ -76,9 +76,6 @@ const config = {
           // {title: "Vision", icon:iconPath + "vision.png", url: ""},
         ]
       },
-
-
-
     ],
     books: [
       {title: "解密Instagram", img: "/images/books/instagram.jpg", value:35},
