@@ -34,6 +34,8 @@ export default defineConfig({
   },
   appearance: 'force-dark',
   themeConfig: {
+    outline: [2, 3, 4, 5],
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'About', link: '/' },
@@ -92,11 +94,10 @@ export default defineConfig({
       // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
       copyright: 'Copyright © 2024-2024 Jiaolong'
     },
-
-  },
-  markdown: {
-    headers: {
-      level: [2, 3]
+    markdown: {
+      toc: { level: [1, 2, 3] },
+      lineNumbers: true,
+      badge: true
     }
   },
 })
