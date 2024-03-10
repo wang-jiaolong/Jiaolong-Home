@@ -50,9 +50,9 @@ const config = {
       {
         title: "Skills",
         items: [
-          {title:"🥳 Swift", value:45},
+          {title:"🥳 Swift", value:50},
           {title:"🤨 Objective-C", value:30},
-          {title:"🤯 Java", value:25},
+          {title:"🤯 Java", value:30},
           {title:"😶‍🌫️ Vue + HTML + CSS", value:20},
           {title:"😵 Python", value:10},
           {title:"🥶 Kotlin", value:1},
