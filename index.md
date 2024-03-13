@@ -24,7 +24,16 @@ const config = {
     🚗 数字游民策划中1%`,
     doings: [
       {icon: imagePath + "icon-app.svg", title: "iOS Developer", description: "一个正在成长的iOS独立开发者。"},
-      {icon: imagePath + "icon-photo.svg", title: "Photography", description: "正在尝试着拍摄一些有趣的东西。"},
+      {icon: imagePath + "icon-photo.svg", title: "Photography", description: "正在尝试着拍摄一些有趣的东西。"}
+    ],
+    okrs: [
+          {title:"🎓 顺利毕业", date:"2024.06" , value:50 , subItems: [
+              {title:"小论文", value:15},
+               {title:"大论文", value:15},
+          ]},
+          {title:"📱 事线App端重构优化", date:"2024 - 2025" , value:15},
+          {title:"🧑🏻‍💻 Full-Stack Developer", date:"< 2030" , value:10},
+          {title:"🚗 数字游民计划", date:"< 2035" , value:1.1}
     ],
     progress: [
       {

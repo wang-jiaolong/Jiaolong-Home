@@ -21,9 +21,13 @@
 
         <Testimonials :items="config.content.projects"></Testimonials>
 
+
+        <!-- <OKRs :items="config.content.okrs"></OKRs> -->
+
         <MySkills :items="config.content.progress"></MySkills>
 
         <Products :items="config.content.apps"></Products>
+
 
 
         <!-- <Clients :items="config.content.books"></Clients> -->
@@ -44,6 +48,7 @@ import Doing from "../components/Doing.vue"
 import Testimonials from "../components/Testimonials.vue"
 import Products from "../components/Products.vue"
 import Clients from "../components/Clients.vue"
+import OKRs from "../components/OKRs.vue"
 
 
 const props = defineProps({
