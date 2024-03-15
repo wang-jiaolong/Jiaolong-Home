@@ -44,7 +44,7 @@ a {
 
     p {
         margin: 0px;
-        
+        line-height: unset;
     }
 
     margin: 30px 0px;
