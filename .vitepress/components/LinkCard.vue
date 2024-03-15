@@ -53,6 +53,13 @@ a {
     transition: 0.15s; /* 添加过渡效果 */
     border-radius: 8px;
 
+
+
+    @media(max-width: 600px) {
+        margin: 20px 0px;
+        padding: 10px 15px;
+
+                }
     .info {
         display: flex;
         justify-content: space-between;
@@ -63,6 +70,10 @@ a {
 
             .title {
                 color: var(--vp-c-brand-1);
+
+                @media(max-width: 600px) {
+                    font-size: 15px;
+                }
             }
 
             .url {
