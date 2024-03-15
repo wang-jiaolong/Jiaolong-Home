@@ -49,7 +49,7 @@ a {
 
     margin: 30px 0px;
     padding: 12px 15px;
-    border: 1px solid var(--vp-c-text-3); /* 2 像素宽的黑色实线边框 */
+    border: 1px solid var(--vp-c-divider);
     transition: 0.15s; /* 添加过渡效果 */
     border-radius: 8px;
 
@@ -102,7 +102,7 @@ a {
 }
 
 .card:hover {
-    border: 1px solid var(--vp-c-brand-1); /* 2 像素宽的黑色实线边框 */
+    border: 1px solid var(--vp-c-text-2); /* 2 像素宽的黑色实线边框 */
     transition: 0.15s; /* 添加过渡效果 */
 }
 
