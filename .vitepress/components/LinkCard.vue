@@ -69,10 +69,14 @@ a {
                 width: 300px;
                 flex: 1;
                 overflow: hidden; /* 当文本溢出时隐藏 */
-    white-space: nowrap; /* 防止文本换行 */
-    text-overflow: ellipsis; /* 显示省略号 */
+                white-space: nowrap; /* 防止文本换行 */
+                text-overflow: ellipsis; /* 显示省略号 */
                 color: var(--vp-c-text-2);
                 font-size: 12px;
+
+                @media(max-width: 600px) {
+                    width: 180px;
+                }
             }
         }
         .right {
