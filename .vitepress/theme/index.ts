@@ -6,6 +6,7 @@ import './style.css'
 import './custom.css'
 
 import MyLayout from "../components/MyLayout.vue";
+import LinkCard from "../components/LinkCard.vue";
 
 export default {
   extends: DefaultTheme,
@@ -15,7 +16,8 @@ export default {
   //     // https://vitepress.dev/guide/extending-default-theme#layout-slots
   //   })
   // },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  enhanceApp(ctx) {
+    ctx.app.component('LinkCard', LinkCard)
   }
+  
 } satisfies Theme

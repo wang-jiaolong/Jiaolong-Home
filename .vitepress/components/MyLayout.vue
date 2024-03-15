@@ -18,9 +18,15 @@
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
                     <img :src=" '../../../../weekly/' + new Date(frontmatter.date).getFullYear() + '/' + getFileNameWithoutExtension(page.filePath) + '.jpg'" />
+
                 </div>
-                
+
             </template>
+
+            <template #doc-after>
+
+             </template>
+
         </Layout>
 
     </div>
@@ -36,8 +42,6 @@ const { Layout } = DefaultTheme;
 const { page, frontmatter } = useData()
 
 defineProps(["frontmatter"]);
-
-
 
 </script>
 

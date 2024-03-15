@@ -33,6 +33,11 @@
         <li class="navbar-item">
           <a href="./weekly" :class="config.active == 'weekly' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Weekly</a>
         </li>
+<!-- 
+        <li class="navbar-item">
+          <a href="./timeline" :class="config.active == 'timeline' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Timeline</a>
+        </li>
+   -->
   
         <!-- <li class="navbar-item">
           <a href="./photos" :class="config.active == 'photos' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Photos</a>
@@ -191,6 +196,8 @@
     <Weekly :config="config"></Weekly>
 
     <Photos :config="config"></Photos>
+
+    <Timeline :config="config"></Timeline>
 
     <!--
       - #BLOG
@@ -406,6 +413,7 @@
 import Weekly from "./view/WeeklyView.vue"
 import About from "./view/AboutView.vue"
 import Photos from "./view/PhotosView.vue"
+import Timeline from "./view/TimelineView.vue"
 import Sidebar from "./view/SidebarView.vue"
 
 // import * as ioniconsESM from './assets/js/ioniicons.js';
