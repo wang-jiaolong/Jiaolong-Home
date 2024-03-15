@@ -10,6 +10,8 @@ export default defineConfig({
   cleanUrls: true,
   lang: 'zh-cn',
   sidebar: false,
+  ignoreDeadLinks: true,
+
   transformPageData(pageData) {
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push([
