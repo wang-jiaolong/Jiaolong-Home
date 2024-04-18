@@ -33,6 +33,9 @@
         <li class="navbar-item">
           <a href="./weekly" :class="config.active == 'weekly' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Weekly</a>
         </li>
+          <li class="navbar-item">
+          <a href="https://www.gallery.jiaolong.xyz" target="_blank" :class="config.active == 'Gallery' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Photos</a>
+        </li>
 <!-- 
         <li class="navbar-item">
           <a href="./timeline" :class="config.active == 'timeline' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Timeline</a>

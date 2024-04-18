@@ -9,7 +9,7 @@ export default defineConfig({
   description: "Helli, nice to meet you!",
   cleanUrls: true,
   lang: 'zh-cn',
-  sidebar: false,
+  sidebar: true,
   ignoreDeadLinks: true,
 
   transformPageData(pageData) {
