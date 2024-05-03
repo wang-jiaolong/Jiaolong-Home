@@ -34,18 +34,17 @@
           <a href="./weekly" :class="config.active == 'weekly' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Weekly</a>
         </li>
           <li class="navbar-item">
-          <a href="https://www.gallery.jiaolong.xyz" target="_blank" :class="config.active == 'Gallery' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Photos</a>
+          <a href="https://www.gallery.jiaolong.xyz" target="_blank" :class="config.active == 'Gallery' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Gallery</a>
         </li>
-<!-- 
-        <li class="navbar-item">
-          <a href="./timeline" :class="config.active == 'timeline' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Timeline</a>
-        </li>
-   -->
-  
+
         <!-- <li class="navbar-item">
+          <a href="./timeline" :class="config.active == 'timeline' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Timeline</a>
+        </li> -->
+  
+        <li class="navbar-item">
           <a href="./photos" :class="config.active == 'photos' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Photos</a>
         </li>
-   -->
+        
         <!-- <li class="navbar-item">
           <button class="navbar-link" data-nav-link>Portfolio</button>
         </li>
