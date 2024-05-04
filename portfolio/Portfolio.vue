@@ -40,10 +40,6 @@
         <!-- <li class="navbar-item">
           <a href="./timeline" :class="config.active == 'timeline' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Timeline</a>
         </li> -->
-  
-        <li class="navbar-item">
-          <a href="./photos" :class="config.active == 'photos' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Photos</a>
-        </li>
         
         <!-- <li class="navbar-item">
           <button class="navbar-link" data-nav-link>Portfolio</button>
@@ -196,8 +192,6 @@
     <About :config="config"></About>
 
     <Weekly :config="config"></Weekly>
-
-    <Photos :config="config"></Photos>
 
     <Timeline :config="config"></Timeline>
 
@@ -414,7 +408,6 @@
 
 import Weekly from "./view/WeeklyView.vue"
 import About from "./view/AboutView.vue"
-import Photos from "./view/PhotosView.vue"
 import Timeline from "./view/TimelineView.vue"
 import Sidebar from "./view/SidebarView.vue"
 
