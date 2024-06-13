@@ -27,7 +27,7 @@
             </ul>
 
 
-            <div class="filter-select-box">
+            <!-- <div class="filter-select-box">
 
                 <button class="filter-select" data-select>
 
@@ -59,7 +59,7 @@
 
                 </ul>
 
-            </div>
+            </div> -->
 
             <ul class="project-list">
 
