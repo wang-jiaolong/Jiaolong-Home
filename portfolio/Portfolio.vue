@@ -37,6 +37,10 @@
           <a href="https://www.gallery.jiaolong.xyz" target="_blank" :class="config.active == 'Gallery' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Gallery</a>
         </li>
 
+        <li class="navbar-item">
+          <a href="https://www.blog.jiaolong.xyz" target="_blank" :class="config.active == 'Blog' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Blog</a>
+        </li>
+
         <!-- <li class="navbar-item">
           <a href="./timeline" :class="config.active == 'timeline' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Timeline</a>
         </li> -->
