@@ -17,7 +17,7 @@
                         <Badge v-if="frontmatter.week" type="tip" :text="frontmatter.week" />
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
-                    <img :src=" '../../../../weekly/' + new Date(frontmatter.date).getFullYear() + '/' + getFileNameWithoutExtension(page.filePath) + '.jpg'" />
+                    <!-- <img :src=" '../../../../weekly/' + new Date(frontmatter.date).getFullYear() + '/' + getFileNameWithoutExtension(page.filePath) + '.jpg'" /> -->
 
                 </div>
 
