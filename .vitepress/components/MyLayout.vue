@@ -10,7 +10,7 @@
             <template #doc-before>
                 <div class="weekly-title">
                     <div class="title">
-                        <div class="text">{{ page.title }}</div>
+                        <div class="text">{{  getFileNameWithoutExtension(page.filePath).toUpperCase() + '｜' + page.title }}</div>
                     </div>
                     <div class="info">
                         <Badge type="tip" :text="new Date(frontmatter.date).toLocaleDateString()" />
