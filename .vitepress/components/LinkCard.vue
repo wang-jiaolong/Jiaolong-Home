@@ -13,8 +13,6 @@
             <div class="right">
                 <img class="icon" :src="'/images/icon/' + icon + '.png'" />
             </div>
-           
-           
         </div>
     </div>
 </a>
