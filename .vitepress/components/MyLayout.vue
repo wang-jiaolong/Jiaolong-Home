@@ -24,8 +24,14 @@
             </template>
 
             <template #doc-after>
-
-             </template>
+                <div v-if="frontmatter.vxUrl">
+                    <p style="font-weight: bold;">本文同步发布于：</p>
+                    <LinkCard 
+                        :title="getFileNameWithoutExtension(page.filePath).toUpperCase() + '｜' + page.title" 
+                        :url="frontmatter.vxUrl" 
+                        icon="gzh"/>
+                </div>
+            </template>
 
         </Layout>
 
@@ -37,6 +43,7 @@ import DefaultTheme from "vitepress/theme";
 import { useData } from 'vitepress'
 import { onMounted } from 'vue';
 import path from 'path'
+import LinkCard from "./LinkCard.vue";
 
 const { Layout } = DefaultTheme;
 const { page, frontmatter } = useData()
