@@ -61,7 +61,7 @@ export default defineConfig({
     info: {
       avatar: imagePath + "avatar.png",
       name: "Jiaolong",
-      content: "Solo Developer",
+      content: "iOS Developer",
       email: "jiaolong_wang@foxmail.com",
       phone: "",
       birthday: "",
