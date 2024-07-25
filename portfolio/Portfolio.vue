@@ -27,18 +27,18 @@
       <ul class="navbar-list">
   
         <li class="navbar-item">
-          <a href="./index" :class="config.active == 'about' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>About</a>
+          <a href="./index" :class="config.active == 'about' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>🧑‍💻 About</a>
         </li>
   
         <li class="navbar-item">
-          <a href="./weekly" :class="config.active == 'weekly' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Weekly</a>
+          <a href="./weekly" :class="config.active == 'weekly' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>📅 Weekly</a>
         </li>
           <li class="navbar-item">
-          <a href="https://www.gallery.jiaolong.xyz" target="_blank" :class="config.active == 'Gallery' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Gallery</a>
+          <a href="https://www.gallery.jiaolong.xyz" target="_blank" :class="config.active == 'Gallery' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>📷 Gallery</a>
         </li>
 
         <li class="navbar-item">
-          <a href="https://www.blog.jiaolong.xyz" target="_blank" :class="config.active == 'Blog' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>Blog</a>
+          <a href="https://www.blog.jiaolong.xyz" target="_blank" :class="config.active == 'Blog' ? 'navbar-link active' : 'navbar-link'" class="" data-nav-link>📝 Blog</a>
         </li>
 
         <!-- <li class="navbar-item">
