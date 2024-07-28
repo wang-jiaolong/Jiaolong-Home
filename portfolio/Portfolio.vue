@@ -424,3 +424,9 @@ const props = defineProps({
 
 </script>
 
+
+<style lang="less">
+  .portfolio {
+    padding-top: 60px;
+  }
+</style>
