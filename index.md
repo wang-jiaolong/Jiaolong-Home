@@ -22,7 +22,7 @@ const config = {
 
     我是 <b><u>Jiaolong</u></b>，一所普通学校的普通计算机专业学生，在我应付了诸多课设后就在想，为什么不能真正开发一款产品呢？由于是后端出身，所以愈发觉得拳脚无处施展，于是在我读研前的间隙自学了iOS开发，步入大前端的行列。当然除了写移动端的代码外，我也正努力正向全栈靠拢，不只是代码上的全栈，还有技能上的全栈，希望有一天能够一人即团队。<br><br>
 
-    目前为止由我自己独立开发了两款iOS App，物品指南/事线，欢迎你去下载体验。在不断维护的过程中，也不断让我朝着创业的目标靠拢，也认识了诸多朋友。<br><br>
+    目前为止由我自己独立开发了两款iOS App，物品指南/事线已在App Store上线，欢迎你去下载体验。在不断维护的过程中，也不断让我朝着创业的目标靠拢，也认识了诸多朋友。<br><br>
     
     但不是所有想法都能立刻落地实现并且有效的，所以我也像大多毕业生一样找了份谋生的工作，幸运的是这是一家我很喜欢的公司。同时我也在不断提高自己的技术，而开发app则作为我的副业，下班之余会抽空来更新，当有一天睡后收入能差不多cover收入后，可能会选择all in，也许几年？也许没这个机会，但总要有点念想。<br><br>
 
@@ -77,10 +77,31 @@ const config = {
 
     ],
     projects: [
-      {title: "事线 - 串事成线",description: "多项目时间线记录工具", icon:iconPath + "eventline.jpg", url: "", badge:"iOS", label: "已上架"},
-      {title: "物品指南 - 你的生活数据库",description: "打造你的生活数据库", icon:iconPath + "mythings.jpg", url: "", badge:"iOS",label: "已上架"},
-      {title: "ReceiptEase",description: "小票风账单", icon:iconPath + "receipt.png", url: "", badge:"iOS",label: "已上架"},
-
+      {
+        title: "事线 - 串事成线",
+        description: "多项目时间线记录工具",
+        icon:iconPath + "eventline.jpg",
+        url: "", badge:"iOS App", 
+        label: "努力更新中",
+        status: "fast"
+      },
+      {
+        title: "物品指南 - 你的生活数据库",
+        description: "打造你的生活数据库",
+        icon:iconPath + "mythings.jpg",
+        url: "",
+        badge:"iOS App",
+        label: "缓慢更新",
+        status: "suspended"
+      },
+      {
+        title: "ReceiptEase",
+        description: "小票风账单",
+        icon:iconPath + "receipt.png",
+        url: "", badge:"iOS App",
+        label: "缓慢更新",
+        status: "suspended"
+      },
     ],
     apps:[
       {

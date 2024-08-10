@@ -12,21 +12,15 @@
             <li v-for="item in items" class="testimonials-item">
                 <div class="content-card" data-testimonials-item>
 
-                    <!-- <figure class="testimonials-avatar-box">
-                
-            </figure> -->
-
-
-
                     <div class="firstLine">
                         <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar />
 
                         <div class="label">
                             <span class="light">
-                                <span class="bigDot"></span>
-                                <span class="lightDot"></span>
+                                <span class="bigDot" :style="getStyle(item.status, true)"></span>
+                                <span class="lightDot" :style="getStyle(item.status)"></span>
                             </span>
-                            <span class="text">{{ item.label }}</span>
+                            <span class="text" :style="getTextStyle(item.status)">{{ item.label }}</span>
                         </div>
 
                     </div>
@@ -98,6 +92,52 @@
 const props = defineProps({
     items: Object
 })
+
+function getStyle(status, withAnim = false) {
+    let color = '';
+    let anim = '';
+      switch (status) {
+        case 'fast':
+            color = 'rgb(34 197 94 / 1)'
+            anim = 'ping 1.5s cubic-bezier(0, 0, .2, 1) infinite'
+            break
+        case 'suspended':
+            color = 'rgba(197, 181, 34, 0.8)'
+            anim = 'ping 5s cubic-bezier(0, 0, .2, 1) infinite'
+            break
+        case 'error':
+          return { backgroundColor: 'red', color: 'white' };
+        default:
+          return { backgroundColor: 'white', color: 'black' };
+      }
+      return { 
+            backgroundColor: color,
+            animation: withAnim ? anim : 'unset'
+        };
+    }
+
+    function getTextStyle(status, withAnim = false) {
+    let color = '';
+    let anim = '';
+      switch (status) {
+        case 'fast':
+            color = 'rgb(34 197 94 / 1)'
+            anim = 'ping 1.5s cubic-bezier(0, 0, .2, 1) infinite'
+            break
+        case 'suspended':
+            color = 'rgba(197, 181, 34, 0.8)'
+            anim = 'ping 5s cubic-bezier(0, 0, .2, 1) infinite'
+            break
+        case 'error':
+          return { backgroundColor: 'red', color: 'white' };
+        default:
+          return { backgroundColor: 'white', color: 'black' };
+      }
+      return { 
+            color: color,
+        };
+    }
+
 </script>
 
 
@@ -190,7 +230,7 @@ const props = defineProps({
     .lightDot {
         height: 0.65rem;
         width: 0.65rem;
-        background-color: rgb(34 197 94 / 1);
+        // background-color: rgb(34 197 94 / 1);
         border-radius: 99px;
         display: inline-flex;
     }
@@ -213,7 +253,7 @@ const props = defineProps({
                 height: 100%;
                 width: 100%;
                 opacity: .75;
-                background-color: rgb(34 197 94 / 0.8);
+                background-color: rgba(197, 181, 34, 0.8);
                 border-radius: 99px;
                 animation: ping 1.5s cubic-bezier(0, 0, .2, 1) infinite;
                 position: absolute;
