@@ -110,7 +110,7 @@ const config = {
           {title: "notion", icon:iconPath + "notion.png", url: ""},
           {title: "Craft", icon:iconPath + "craft.png", url: ""},
           {title: "linear", icon:iconPath + "linear.png", url: ""},
-          // {title: "Vision", icon:iconPath + "vision.png", url: ""},
+          {title: "Flomo", icon:iconPath + "flomo.png", url: ""},
         ]
       },
     ],
