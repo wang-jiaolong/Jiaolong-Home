@@ -15,6 +15,13 @@ import Portfolio from './portfolio/Portfolio.vue'
 
 const imagePath = '/images/'
 
+const config = {
+    active: "timeline",
+  content: {
+  }
+
+}
+
 </script>
 
 <Portfolio :info="theme.info" :config="config"/>
