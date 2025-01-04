@@ -4,7 +4,7 @@
             <h3 class="h3 clients-title">Favorite Products</h3>
             <ul class="clients-list has-scrollbar">
                 <div v-for="group in items" class="content-card">
-                    <h4 class="h4" data-testimonials-title>{{ group.title }}</h4>
+                    <!-- <h4 class="h4" data-testimonials-title>{{ group.title }}</h4> -->
                     <div class="testimonials-text" data-testimonials-text>
                         <ul class="clients-list has-scrollbar">
 
@@ -46,7 +46,7 @@ const props = defineProps({
 
 .testimonials-text {
     .clients-list {
-        gap: 15px;
+        gap: 20px;
         scroll-padding-inline: 45px;
     }
 }
@@ -57,8 +57,6 @@ const props = defineProps({
 }
 
 .content-card {
-    padding-top: 20px;
-
     h4 {
         margin-top: -5px;
         padding-bottom: 10px;

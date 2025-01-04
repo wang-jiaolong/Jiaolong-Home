@@ -43,7 +43,7 @@ const props = defineProps({
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;

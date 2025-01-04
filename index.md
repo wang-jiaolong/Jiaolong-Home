@@ -34,42 +34,37 @@ const config = {
 
     `,
     doings: [
-      {icon: imagePath + "icon-app.svg", title: "iOS Developer", description: "一个正在成长的iOS独立开发者。"},
-      {icon: imagePath + "icon-photo.svg", title: "Photography", description: "正在尝试着拍摄一些有趣的东西。"}
-    ],
-    okrs: [
-          {title:"🎓 顺利毕业", date:"2024.06" , value:50 , subItems: [
-              {title:"小论文", value:15},
-               {title:"大论文", value:15},
-          ]},
-          {title:"📱 事线App端重构优化", date:"2024 - 2025" , value:15},
-          {title:"🧑🏻‍💻 Full-Stack Developer", date:"< 2030" , value:10},
-          {title:"🚗 数字游民计划", date:"< 2035" , value:1.1}
+      {icon: imagePath + "icon-app.svg", title: "iOS Developer", description: "一个正在成长的iOS独立开发者"},
+      {icon: imagePath + "icon-photo.svg", title: "Photography", description: "正在尝试着拍摄一些有趣的东西"},
+      {icon: imagePath + "coffee.svg", title: "Coffee", description: "学着做些简单的咖啡"}
     ],
     progress: [
       {
         title: "OKRs",
         items: [
           {title:"📱 事线App端重构优化", date:"2024 - 2025" , value:20},
+          {title:"📱 事线App端重构优化", date:"2024 - 2026" , value:20},
+          {title:"📚 看5本书", date:"2025 - 2026" , value:0},
+          {title:"💰 攒够 * W", date:"2025 - 2026" , current:3000, target:200000, value:0},
           {title:"🧑🏻‍💻 Full-Stack Developer", date:"< 2030" , value:15},
           {title:"🚗 数字游民计划", date:"< 2035" , value:1.1}
         ]
       },
-      {
-        title: "Area",
-        items: [
-          {title:"🧑🏻‍💻 编程", value:33.3},
-          {title:"📷 摄影", value:10},
-          {title:"🎬 剪辑", value:10}
-        ]
-      },
+      // {
+      //   title: "Area",
+      //   items: [
+      //     {title:"🧑🏻‍💻 编程", value:33.3},
+      //     {title:"📷 摄影", value:10},
+      //     {title:"🎬 剪辑", value:10}
+      //   ]
+      // },
       {
         title: "Skills",
         items: [
-          {title:"🥳 Swift", value:50},
-          {title:"🤨 Objective-C", value:30},
+          {title:"🥳 Swift", value:60},
+          {title:"🤨 Objective-C", value:40},
           {title:"🤯 Java", value:30},
-          {title:"😶‍🌫️ Vue + HTML + CSS", value:20},
+          {title:"😶‍🌫️ Vue + HTML + CSS + JS", value:20},
           {title:"😵 Python", value:10},
           {title:"🥶 Kotlin", value:1},
         ]

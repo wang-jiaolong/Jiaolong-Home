@@ -9,7 +9,7 @@
             <li v-for="item in items" class="service-item">
 
                 <div class="service-icon-box">
-                    <img :src="item.icon" :alt="item.title" width="40">
+                    <img :src="item.icon" :alt="item.title" height="50">
                 </div>
 
                 <div class="service-content-box">
@@ -84,7 +84,7 @@ const props = defineProps({
 }
 
 .service-item-title {
-    margin-bottom: 7px;
+    margin-bottom: 2px;
 }
 
 .service-item-text {

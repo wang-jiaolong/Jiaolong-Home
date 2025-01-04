@@ -204,7 +204,7 @@ function getStyle(status, withAnim = false) {
 .content-card {
     position: relative;
     background: var(--border-gradient-onyx);
-    padding: 20px;
+    padding: 25px;
     border-radius: 14px;
     box-shadow: var(--shadow-2);
     cursor: pointer;
