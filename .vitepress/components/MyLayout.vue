@@ -97,4 +97,13 @@ export default {
     }
 
 }
+
+.content {
+    padding: unset !important;
+}
+
+hr {
+    display: none;
+}
+
 </style>

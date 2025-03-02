@@ -77,7 +77,7 @@
                         </figure>
 
 
-                        <h3 class="project-title">{{ item.week.toUpperCase() + ': ' + item.title }}</h3>
+                        <h3 class="project-title">{{ item.week.toUpperCase() + '｜' + item.title }}</h3>
 
                         <p class="project-category">{{ new Date(item.date).toLocaleDateString() }}</p>
 
@@ -143,7 +143,5 @@ const props = defineProps({
         }
     }
 }
-hr {
-    display: none;
-}
+
 </style>
