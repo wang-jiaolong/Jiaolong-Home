@@ -143,4 +143,7 @@ const props = defineProps({
         }
     }
 }
+hr {
+    display: none;
+}
 </style>
