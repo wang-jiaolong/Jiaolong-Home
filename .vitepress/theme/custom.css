@@ -27,3 +27,8 @@
 .VPFooter {
     border-top: unset!important;
 }
+
+
+.vp-doc h2 {
+    border-top: unset;
+}
