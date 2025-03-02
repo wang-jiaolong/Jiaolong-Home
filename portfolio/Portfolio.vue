@@ -428,5 +428,9 @@ const props = defineProps({
 <style lang="less">
   .portfolio {
     padding-top: 60px;
+    @media(max-width: 600px) {
+      padding-top: unset;
+    }
   }
+  
 </style>
