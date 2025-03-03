@@ -102,14 +102,4 @@ export default {
     padding: unset !important;
 }
 
-hr {
-    display: none;
-}
-
-.vp-doc h2 {
-    border-top: unset;
-    border-bottom: 1px solid var(--vp-c-divider);
-    padding-bottom: 24px;
-}
-
 </style>
