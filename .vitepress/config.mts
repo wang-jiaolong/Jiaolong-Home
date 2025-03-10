@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { weekly } from './theme/weekly-auto'
+import markdownList from 'markdown-it-checkbox'
 
 const imagePath = '/images/'
 
@@ -35,6 +36,15 @@ export default defineConfig({
       }])
   },
   appearance: 'force-dark',
+  markdown: {
+    config: (md) => {
+      // 启用 task list 插件
+      md.use(markdownList);
+    },
+    toc: { level: [1, 2, 3] },
+    lineNumbers: true,
+    badge: true
+  },
   themeConfig: {
     outline: [2, 3, 4, 5],
 
@@ -95,11 +105,6 @@ export default defineConfig({
     footer: {
       // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
       copyright: 'Copyright © 2024-2024 Jiaolong'
-    },
-    markdown: {
-      toc: { level: [1, 2, 3] },
-      lineNumbers: true,
-      badge: true
     }
   },
 })
