@@ -13,7 +13,7 @@
                         <div class="text">{{  getFileNameWithoutExtension(page.filePath).toUpperCase() + '｜' + page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="tip" :text="new Date(frontmatter.date).toISOString().split('T')[0].replace(/-/g, '/')" />
+                        <Badge type="tip" :text="new Date(frontmatter.date).toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '/')" />
                         <Badge v-if="frontmatter.week" type="tip" :text="frontmatter.week" />
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
