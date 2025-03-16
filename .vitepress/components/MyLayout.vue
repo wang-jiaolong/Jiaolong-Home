@@ -13,7 +13,7 @@
                         <div class="text">{{  getFileNameWithoutExtension(page.filePath).toUpperCase() + '｜' + page.title }}</div>
                     </div>
                     <div class="info">
-                        <Badge type="tip" :text="new Date(frontmatter.date).toLocaleDateString()" />
+                        <Badge type="tip" :text="new Date(frontmatter.date).toISOString().split('T')[0].replace(/-/g, '/')" />
                         <Badge v-if="frontmatter.week" type="tip" :text="frontmatter.week" />
                         <!-- <div id="word-count">字数统计：Loading...</div> -->
                     </div>
@@ -31,6 +31,11 @@
                         :url="frontmatter.vxUrl" 
                         icon="gzh"/>
                 </div>
+                <br>
+
+                🪧 广告时间
+                <LinkCard title="事线 - 串事成线"  url="https://apps.apple.com/cn/app/eventline-threads-of-events/id1662454742?l=en-GB" icon="eventline" />
+
             </template>
 
         </Layout>
