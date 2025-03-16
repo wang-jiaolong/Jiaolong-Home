@@ -104,7 +104,7 @@ export default defineConfig({
     },
     footer: {
       // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-      copyright: 'Copyright © 2024-2024 Jiaolong'
+      copyright: 'Copyright © 2023-2025 Jiaolong'
     }
   },
 })
