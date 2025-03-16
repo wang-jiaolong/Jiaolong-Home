@@ -37,3 +37,8 @@
     border-bottom: 1px solid var(--vp-c-divider);
     padding-bottom: 24px;
 }
+.vp-doc h3 {
+    border-top: unset !important;
+    border-bottom: 1px solid var(--vp-c-divider);
+    padding-bottom: 24px;
+}

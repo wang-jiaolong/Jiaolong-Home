@@ -98,8 +98,4 @@ export default {
 
 }
 
-.content {
-    padding: unset !important;
-}
-
 </style>
