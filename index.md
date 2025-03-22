@@ -43,11 +43,10 @@ const config = {
         title: "OKRs",
         items: [
           {title:"📱 事线App端重构优化", date:"2024 - 2025" , value:20},
-          {title:"📱 事线App端重构优化", date:"2024 - 2026" , value:20},
           {title:"📚 看5本书", date:"2025 - 2026" , value:0},
           {title:"💰 攒够 * W", date:"2025 - 2026" , current:3000, target:200000, value:0},
           {title:"🧑🏻‍💻 Full-Stack Developer", date:"< 2030" , value:15},
-          {title:"🚗 数字游民计划", date:"< 2035" , value:1.1}
+          {title:"🚗 数字游民计划", date:"< 2030" , value:1.1}
         ]
       },
       // {
