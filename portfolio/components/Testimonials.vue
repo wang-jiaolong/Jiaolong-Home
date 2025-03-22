@@ -13,7 +13,7 @@
                 <div class="content-card" data-testimonials-item>
 
                     <div class="firstLine">
-                        <img :src="item.icon" alt="Daniel lewis" data-testimonials-avatar />
+                        <img :src="item.icon" data-testimonials-avatar />
 
                         <div class="label">
                             <span class="light">
