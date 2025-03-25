@@ -46,3 +46,9 @@
 .VPDoc {
     padding: 32px 24px 0px !important;
 }
+
+input, textarea {
+    display: unset !important;
+    width: unset !important;
+    margin-right: 8px;
+}
