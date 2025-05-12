@@ -87,6 +87,10 @@ export default {
         line-height: 40px;
         font-size: 32px;
         font-weight: bold;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
         }
         
     }
