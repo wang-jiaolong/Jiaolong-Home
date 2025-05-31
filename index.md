@@ -61,9 +61,9 @@ const config = {
         title: "Skills",
         items: [
           {title:"🥳 Swift", value:60},
-          {title:"🤨 Objective-C", value:40},
-          {title:"🤯 Java", value:30},
-          {title:"😶‍🌫️ Vue + HTML + CSS + JS", value:20},
+          {title:"🤨 Objective-C", value:50},
+          {title:"🤯 Go", value:30},
+          {title:"😶‍🌫️ React + HTML + CSS + JS", value:20},
           {title:"😵 Python", value:10},
           {title:"🥶 Kotlin", value:1},
         ]
